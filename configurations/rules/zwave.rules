@@ -1,0 +1,62 @@
+import org.openhab.core.library.types.*
+import org.openhab.model.script.actions.*
+rule "Eten Knop Aan"
+when 
+	Item LinksAan received update 1
+then
+	
+	sendCommand(TafelScene, 1)
+end
+rule "Eten Knop Lang Aan"
+when 
+	Item LinksLAAan received update 1
+then
+	
+	sendCommand(TafelScene, 2)
+end
+rule "Eten Knop Lang Uit"
+when 
+	Item LinksLAUit received update 1
+then
+	
+	sendCommand(TafelScene, 0)
+	sendCommand(KamerScene, 0)
+	sendCommand(KeukenS, OFF)
+	sendCommand(NosferatuS, OFF)
+end
+rule "Eten Knop Uit"
+when 
+	Item LinksUit received update 1
+then
+	
+	sendCommand(TafelScene, 0)
+end
+
+rule "Herfst Knop Aan"
+when 
+	Item LinksDBAan received update 1
+then
+	
+	sendCommand(KamerScene, 1)
+end
+rule "Herfst Knop Uit"
+when 
+	Item LinksDBUit received update 1
+then
+	
+	sendCommand(KamerScene, 0)
+end
+rule "Overloop Knop Aan"
+when 
+	Item RechtsAan received update 1
+then
+	
+	sendCommand(OverloopS, ON)
+end
+rule "Overloop Knop Uit"
+when 
+	Item RechtsUit received update 1
+then
+	
+	sendCommand(OverloopS, OFF)
+end

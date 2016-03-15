@@ -1,0 +1,89 @@
+import org.openhab.core.library.types.*
+import org.openhab.model.script.actions.*
+import org.openhab.core.persistence.*
+
+var HSBType etentl = new HSBType("73,81,37")
+var HSBType etentm = new HSBType("84,47,100")
+var HSBType keuken1 = new HSBType("100,100,70")
+var HSBType keuken2 = new HSBType("100,100,100")
+
+
+rule "Kamer scene"
+when 
+	Item KamerScene received command
+then
+	var String zl
+	var String sl
+	var String lc
+	var Timer timer
+	switch(receivedCommand) {
+		case 1 :  { zl="0,0,50" sl="70,100,100" lc="89,100,100" }
+		case 2 : { zl="0,0,50" sl="149,100,75" lc="168,100,100" }
+		default : { zl="OFF" sl="OFF" lc="OFF" }
+	}
+	if (receivedCommand < 3) {
+		sendCommand(ZonneLampC, zl)
+		sendCommand(SchemerLampC, sl)
+		sendCommand(LivingColorC, lc)
+	}
+end
+rule "Tafel scene"
+when 
+	Item TafelScene received command
+then
+	switch(receivedCommand) {
+		case 1 :  { sendCommand(TafelC, etentl)}
+		case 2 :  { sendCommand(TafelC, etentm)}
+		default : { sendCommand(TafelC, OFF) }
+	}
+end
+
+rule "Keuken Lamp"
+when 
+	Item KeukenScene received command
+then
+	switch(receivedCommand) {
+		case 1 :  { sendCommand(KeukenC, keuken1)}
+		case 2 :  { sendCommand(KeukenC, keuken2)}
+		default : { sendCommand(KeukenC, OFF) }
+	}
+end
+rule "Bed scene"
+when 
+	Item BedScene received command
+then
+	switch(receivedCommand) {
+		case 1 :  { sendCommand(BedLampC, "0,0,10")}
+		case 2 :  { sendCommand(BedLampC, "0,0,25")}
+		case 3 :  { sendCommand(BedLampC, "0,0,50")}
+		case 4 :  { sendCommand(BedLampC, "0,0,100")}
+		default : { sendCommand(BedLampC, OFF) }
+	}
+end
+rule "Buiten scene"
+when 
+	Item BuitenScene received command
+then
+	switch(receivedCommand) {
+		case 1 :  { sendCommand(BuitenC, "0,0,10")}
+		case 2 :  { sendCommand(BuitenC, "0,0,50")}
+		case 3 :  { sendCommand(BuitenC, "0,0,100")}
+		case 4 :  { /*auto */}
+		default : { sendCommand(BuitenC, OFF) }
+	}
+end
+rule "Eten on"
+when 
+	Item TafelKamerS changed
+then
+		sendCommand(TafelScene, 1)
+end
+
+rule "Kamer uit off"
+when 
+	Item KamerUit received command ON
+then
+	sendCommand(ZonneLampS, OFF)
+	sendCommand(SchemerLampS, OFF)
+	sendCommand(LivingColorS, OFF)
+end
