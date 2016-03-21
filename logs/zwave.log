@@ -1,3 +1,2 @@
-2016-03-15 00:18:21.502 [INFO ] [.z.internal.ZWaveActiveBinding:317 ]- ZWave 'updated' with null config
-2016-03-15 00:18:39.260 [DEBUG] [.zwave.internal.ZWaveActivator:36  ]- Z-Wave binding started. Version 1.8.1
-2016-03-15 00:18:39.551 [DEBUG] [.z.internal.ZWaveActiveBinding:175 ]- ConverterHandler not initialised. Polling disabled.
+2016-03-21 22:44:23.149 [DEBUG] [.zwave.internal.ZWaveActivator:36  ]- Z-Wave binding started. Version 1.8.1
+2016-03-21 22:44:24.206 [DEBUG] [.z.internal.ZWaveActiveBinding:175 ]- ConverterHandler not initialised. Polling disabled.
