@@ -1,0 +1,25 @@
+import org.openhab.core.library.types.*
+import org.openhab.model.script.actions.*
+import org.openhab.core.persistence.*
+
+
+
+//var DecimalType hue = new DecimalType(240) // 0-360; 0=red, 120=green, 240=blue, 360=red(again)
+//var PercentType sat = new PercentType(100) // 0-100
+//var PercentType bright = new PercentType(100) // 0-100
+//var HSBType light = new HSBType(hue,sat,bright)
+
+
+rule "Garage Light"
+when
+    Item Toggle_1 received command
+then
+    if(receivedCommand==ON) {
+        sendCommand(Toggle_1, ON)
+        //sendHttpGetRequest("http://<ip_address>/cgi-bin/do?cmd=ir_code&ir_code=A05FBF00")
+    } else if(receivedCommand==OFF) {
+        // turn off Dune HD and AVR
+        //sendHttpGetRequest("http://<ip_address>/cgi-bin/do?cmd=ir_code&ir_code=A15EBF00")
+        sendCommand(Toggle_1, OFF)
+    }
+end
