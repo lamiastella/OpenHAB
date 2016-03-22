@@ -22486,3 +22486,465 @@ java.net.BindException: Address already in use
 2016-03-22 21:22:00.054 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
 2016-03-22 21:23:00.030 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
 2016-03-22 21:23:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:27:53.089 [WARN ] [.u.component.AbstractLifeCycle] - FAILED SslSelectChannelConnector@0.0.0.0:8443: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:463) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_95]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:27:53.120 [WARN ] [.u.component.AbstractLifeCycle] - FAILED org.eclipse.jetty.server.Server@9ab55c: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:463) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_95]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:27:54.243 [WARN ] [.i.s.JettyServerServiceTracker] - 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:463) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_95]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[na:na]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[na:na]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[na:na]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[na:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[na:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) ~[na:na]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:27:55.322 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-03-22 21:28:02.267 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-03-22 21:28:02.468 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-03-22 21:28:09.190 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-03-22 21:28:10.291 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-03-22 21:28:10.358 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-03-22 21:28:10.415 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-03-22 21:28:10.620 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-03-22 21:28:10.828 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.items'
+2016-03-22 21:28:22.058 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'zwave.rules'
+2016-03-22 21:28:22.983 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.rules'
+2016-03-22 21:28:26.079 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-03-22 21:28:43.580 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:28:43.591 [ERROR] [m.r.internal.engine.RuleEngine] - Error during the execution of startup rule 'Update max and min temperatures': cannot invoke method public abstract org.openhab.core.types.State org.openhab.core.persistence.HistoricItem.getState() on null
+2016-03-22 21:28:43.613 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'hue.rules'
+2016-03-22 21:28:44.474 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.sitemap'
+2016-03-22 21:28:45.054 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-03-22 21:28:45.143 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'buiten.sitemap'
+2016-03-22 21:28:45.617 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-03-22 21:29:01.009 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:29:01.011 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:30:00.048 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:30:00.051 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:31:00.021 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:31:00.022 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:31:31.695 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:31:31.698 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:00.041 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:00.048 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:00.054 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:00.293 [WARN ] [.u.component.AbstractLifeCycle] - FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:463) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_95]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:32:01.263 [WARN ] [.u.component.AbstractLifeCycle] - FAILED SslSelectChannelConnector@0.0.0.0:8443: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:463) ~[na:1.7.0_95]
+	at sun.nio.ch.Net.bind(Net.java:455) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.7.0_95]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_95]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:32:01.276 [WARN ] [.u.component.AbstractLifeCycle] - FAILED org.eclipse.jetty.server.Server@6195c9: MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+org.eclipse.jetty.util.MultiException: Multiple exceptions
+	at org.eclipse.jetty.server.Server.doStart(Server.java:255) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:32:02.368 [WARN ] [.i.s.JettyServerServiceTracker] - 
+org.eclipse.jetty.util.MultiException: Multiple exceptions
+	at org.eclipse.jetty.server.Server.doStart(Server.java:255) ~[na:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) ~[na:na]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.7.0_95]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-03-22 21:32:03.449 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-03-22 21:32:10.524 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-03-22 21:32:10.718 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-03-22 21:32:17.393 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-03-22 21:32:18.466 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-03-22 21:32:18.524 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-03-22 21:32:18.574 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-03-22 21:32:18.752 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-03-22 21:32:18.946 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.items'
+2016-03-22 21:32:30.083 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'zwave.rules'
+2016-03-22 21:32:30.985 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.rules'
+2016-03-22 21:32:33.907 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-03-22 21:32:50.515 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:32:50.526 [ERROR] [m.r.internal.engine.RuleEngine] - Error during the execution of startup rule 'Update max and min temperatures': cannot invoke method public abstract org.openhab.core.types.State org.openhab.core.persistence.HistoricItem.getState() on null
+2016-03-22 21:32:50.547 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'hue.rules'
+2016-03-22 21:32:51.400 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.sitemap'
+2016-03-22 21:32:51.978 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-03-22 21:32:52.059 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'buiten.sitemap'
+2016-03-22 21:32:52.540 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-03-22 21:33:00.027 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:33:00.031 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:33:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:33:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:33:01.190 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:33:01.192 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.039 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.044 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.047 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.053 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:34:00.056 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.060 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.067 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.140 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:35:00.169 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.030 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.040 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:36:00.047 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.025 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.028 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.029 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.030 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:37:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.040 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.041 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:38:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.031 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.042 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.044 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.056 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:39:00.058 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.052 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.054 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.081 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.085 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.109 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:40:00.113 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.030 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.047 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.053 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:41:00.056 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.039 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.055 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.059 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.064 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:42:00.067 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.039 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.040 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:43:00.042 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.048 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.051 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.052 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.056 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.063 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:44:00.067 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.048 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.051 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.071 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.074 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.088 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:45:00.093 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:46:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:47:00.041 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.039 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.043 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:48:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.023 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.026 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.029 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.029 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.031 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:49:00.031 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.068 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.071 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.076 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.080 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.148 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:50:00.151 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.032 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:51:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.034 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:52:00.037 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.033 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.035 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:53:00.038 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.026 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.029 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.036 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.039 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.043 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
+2016-03-22 21:54:00.045 [WARN ] [.o.c.p.e.PersistenceExtensions] - There is no queryable persistence service registered with the name 'rrd4j'
