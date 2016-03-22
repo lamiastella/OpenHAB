@@ -8,7 +8,7 @@ Number EnOcean_sensor_0181A67A "Veranda [%.1f °C]" <temperature> (Temperature_C
 Number EnOcean_sensor_0181B05F "Bathroom [%.1f °C]" <temperature> (Temperature_Chart) {enocean="{id=01:81:B0:5F, eep=A5:02:05, parameter=TEMPERATURE}"}
 Number Temperature_Chart_Period	"Chart Period"
 
-Switch Toggle_1   "Garage bulb"   (Switching) {hue="1"}
-Color Color_1     "Garage bulb"   (Colorize)  {hue="1"}
+Switch Toggle_1   "Garage bulb"   (Switching) {hue="3"}
+Color Color_1     "Garage bulb"   (Colorize)  {hue="3"}
 Dimmer Dimm_1     "Garage bulb"   (WhiteDimmer)   {hue="1;brightness;30"}
 Dimmer CT_Dimm_1      "Garage bulb"   (CTDimmer)  {hue="1;colorTemperature;30"}
