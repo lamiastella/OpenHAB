@@ -1,6 +1,0 @@
-sitemap buiten label="Buiten"
-{
-	Frame label="Tuin" {
-		Switch item=BuitenScene label="." mappings=[0="Uit", 1="10", 2="40", 3="100", 4="Auto"]			
-	}		
-}
