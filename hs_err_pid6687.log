@@ -1,0 +1,1420 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (os_linux_zero.cpp:285), pid=6687, tid=1382048864
+#  fatal error: caught unhandled signal 11
+#
+# JRE version: OpenJDK Runtime Environment (7.0_95) (build 1.7.0_95-b00)
+# Java VM: OpenJDK Zero VM (24.95-b01 mixed mode linux-arm )
+# Derivative: IcedTea 2.6.4
+# Distribution: Raspbian GNU/Linux 8.0 (jessie), package 7u95-2.6.4-1~deb8u1+rpi1
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please include
+# instructions on how to reproduce the bug and visit:
+#   http://icedtea.classpath.org/bugzilla
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x75b600e0):  VMThread [stack: 0x52588000,0x52607000] [id=6689]
+
+Stack: [0x52588000,0x52607000],  sp=0x52605024,  free space=500k
+JavaThread 0x51440ee8 (nid = 8118) was being processed
+Java frames:
+ 0x4aabe7fc: istate->_thread       = 0x51440ee8
+ 0x4aabe800: istate->_bcp          = 0x00000000
+ 0x4aabe804: istate->_locals       = 0x4aabe854
+ 0x4aabe808: istate->_constants    = 0x6fab7648
+ 0x4aabe80c: istate->_method       = sun.misc.Unsafe.park(ZJ)V
+ 0x4aabe810: istate->_mdx          = 0x7047ff98
+ 0x4aabe814: istate->_stack        = 0x7047f7c0
+ 0x4aabe818: istate->_msg          = 0x00000000
+ 0x4aabe81c: istate->_result       = 0x4aabe7ec
+ 0x4aabe820: (istate->_result)     = 0x00000000
+ 0x4aabe824: (istate->_result)     = 0x5ca7d9f8
+ 0x4aabe828: istate->_prev_link    = 0x00000000
+ 0x4aabe82c: istate->_oop_temp     = 0x00000000
+ 0x4aabe830: istate->_stack_base   = 0x4aabe7fc
+ 0x4aabe834: istate->_stack_limit  = 0x4aabe7f8
+ 0x4aabe838: istate->_monitor_base = 0x4aabe7fc
+ 0x4aabe83c: istate->_self_link    = 0x4aabe7fc
+ 0x4aabe840: frame_type            = INTERPRETER_FRAME
+ 0x4aabe844: next_frame            = 0x4aabe8a0
+
+ 0x4aabe848: local[3]              = 0x00000000
+ 0x4aabe84c: local[2]              = 0x00000000
+ 0x4aabe850: local[1]              = 0x00000000
+ 0x4aabe854: local[0]              = 0x5c5464a0
+ 0x4aabe858: istate->_thread       = 0x51440ee8
+ 0x4aabe85c: istate->_bcp          = 0x7047f8f6 (bci 14)
+ 0x4aabe860: istate->_locals       = 0x4aabe8a8
+ 0x4aabe864: istate->_constants    = 0x7047ff98
+ 0x4aabe868: istate->_method       = java.util.concurrent.locks.LockSupport.park(Ljava/lang/Object;)V
+ 0x4aabe86c: istate->_mdx          = 0x00000000
+ 0x4aabe870: istate->_stack        = 0x4aabe844
+ 0x4aabe874: istate->_msg          = 0x00000000
+ 0x4aabe878: istate->_result       = 0x00000000
+ 0x4aabe87c: (istate->_result)     = 0x4aabe8c4
+ 0x4aabe880: (istate->_result)     = 0x6fa8ac18
+ 0x4aabe884: istate->_prev_link    = 0x6fa2a180
+ 0x4aabe888: istate->_oop_temp     = 0x00000000
+ 0x4aabe88c: istate->_stack_base   = 0x4aabe858
+ 0x4aabe890: istate->_stack_limit  = 0x4aabe844
+ 0x4aabe894: istate->_monitor_base = 0x4aabe858
+ 0x4aabe898: istate->_self_link    = 0x4aabe858
+ 0x4aabe89c: frame_type            = INTERPRETER_FRAME
+ 0x4aabe8a0: next_frame            = 0x4aabe8f4
+
+ 0x4aabe8a4: local[1]              = 0x535229c8
+ 0x4aabe8a8: local[0]              = 0x5ca7d9f8
+ 0x4aabe8ac: istate->_thread       = 0x51440ee8
+ 0x4aabe8b0: istate->_bcp          = 0x6fb14211 (bci 1)
+ 0x4aabe8b4: istate->_locals       = 0x4aabe8f8
+ 0x4aabe8b8: istate->_constants    = 0x6fb17500
+ 0x4aabe8bc: istate->_method       = java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt()Z
+ 0x4aabe8c0: istate->_mdx          = 0x00000000
+ 0x4aabe8c4: istate->_stack        = 0x4aabe8a4
+ 0x4aabe8c8: istate->_msg          = 0x00000000
+ 0x4aabe8cc: istate->_result       = 0x6fa2a054
+ 0x4aabe8d0: (istate->_result)     = 0x4aabe910
+ 0x4aabe8d4: (istate->_result)     = 0x00000000
+ 0x4aabe8d8: istate->_prev_link    = 0x4aabe8a4
+ 0x4aabe8dc: istate->_oop_temp     = 0x00000000
+ 0x4aabe8e0: istate->_stack_base   = 0x4aabe8ac
+ 0x4aabe8e4: istate->_stack_limit  = 0x4aabe8a4
+ 0x4aabe8e8: istate->_monitor_base = 0x4aabe8ac
+ 0x4aabe8ec: istate->_self_link    = 0x4aabe8ac
+ 0x4aabe8f0: frame_type            = INTERPRETER_FRAME
+ 0x4aabe8f4: next_frame            = 0x4aabe944
+
+ 0x4aabe8f8: local[0]              = 0x5ca7d9f8
+ 0x4aabe8fc: istate->_thread       = 0x51440ee8
+ 0x4aabe900: istate->_bcp          = 0x6fb142f3 (bci 67)
+ 0x4aabe904: istate->_locals       = 0x4aabe964
+ 0x4aabe908: istate->_constants    = 0x6fb17500
+ 0x4aabe90c: istate->_method       = java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$Node;I)Z
+ 0x4aabe910: istate->_mdx          = 0x00000000
+ 0x4aabe914: istate->_stack        = 0x4aabe8f4
+ 0x4aabe918: istate->_msg          = 0x00000000
+ 0x4aabe91c: istate->_result       = 0x4aabe964
+ 0x4aabe920: (istate->_result)     = 0x6fb17500
+ 0x4aabe924: (istate->_result)     = 0x6fb16060
+ 0x4aabe928: istate->_prev_link    = 0x6fa8a120
+ 0x4aabe92c: istate->_oop_temp     = 0x00000000
+ 0x4aabe930: istate->_stack_base   = 0x4aabe8fc
+ 0x4aabe934: istate->_stack_limit  = 0x4aabe8e8
+ 0x4aabe938: istate->_monitor_base = 0x4aabe8fc
+ 0x4aabe93c: istate->_self_link    = 0x4aabe8fc
+ 0x4aabe940: frame_type            = INTERPRETER_FRAME
+ 0x4aabe944: next_frame            = 0x4aabe9b0
+
+ 0x4aabe948: local[7]              = 0x00000000
+ 0x4aabe94c: local[6]              = 0x4aabe900
+ 0x4aabe950: local[5]              = 0x53522988
+ 0x4aabe954: local[4]              = 0x00000000
+ 0x4aabe958: local[3]              = 0x00000001
+ 0x4aabe95c: local[2]              = 0x00000001
+ 0x4aabe960: local[1]              = 0x53522810
+ 0x4aabe964: local[0]              = 0x5ca7d9f8
+ 0x4aabe968: istate->_thread       = 0x51440ee8
+ 0x4aabe96c: istate->_bcp          = 0x70263e68 (bci 112)
+ 0x4aabe970: istate->_locals       = 0x4aabe9d8
+ 0x4aabe974: istate->_constants    = 0x70264818
+ 0x4aabe978: istate->_method       = java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(J)J
+ 0x4aabe97c: istate->_mdx          = 0x00000002
+ 0x4aabe980: istate->_stack        = 0x4aabe958
+ 0x4aabe984: istate->_msg          = 0x00000000
+ 0x4aabe988: istate->_result       = 0x5ca7d9f8
+ 0x4aabe98c: (istate->_result)     = 0x51440ee8
+ 0x4aabe990: (istate->_result)     = 0x6fb1084d
+ 0x4aabe994: istate->_prev_link    = 0x4aabe9d8
+ 0x4aabe998: istate->_oop_temp     = 0x00000000
+ 0x4aabe99c: istate->_stack_base   = 0x4aabe968
+ 0x4aabe9a0: istate->_stack_limit  = 0x4aabe944
+ 0x4aabe9a4: istate->_monitor_base = 0x4aabe968
+ 0x4aabe9a8: istate->_self_link    = 0x4aabe968
+ 0x4aabe9ac: frame_type            = INTERPRETER_FRAME
+ 0x4aabe9b0: next_frame            = 0x4aabea24
+
+ 0x4aabe9b4: local[9]              = 0xf0028c61
+ 0x4aabe9b8: local[8]              = 0x0000ef4a
+ 0x4aabe9bc: local[7]              = 0x00000000
+ 0x4aabe9c0: local[6]              = 0xf0028c61
+ 0x4aabe9c4: local[5]              = 0x0000ef4a
+ 0x4aabe9c8: local[4]              = 0x00000001
+ 0x4aabe9cc: local[3]              = 0x53522810
+ 0x4aabe9d0: local[2]              = 0xfffd7c65
+ 0x4aabe9d4: local[1]              = 0xffffffff
+ 0x4aabe9d8: local[0]              = 0x5ca538c8
+ 0x4aabe9dc: istate->_thread       = 0x51440ee8
+ 0x4aabe9e0: istate->_bcp          = 0x703d932d (bci 53)
+ 0x4aabe9e4: istate->_locals       = 0x4aabea48
+ 0x4aabe9e8: istate->_constants    = 0x7047f0c8
+ 0x4aabe9ec: istate->_method       = org.eclipse.jetty.util.BlockingArrayQueue.poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+ 0x4aabe9f0: istate->_mdx          = 0x51440ee8
+ 0x4aabe9f4: istate->_stack        = 0x4aabe9cc
+ 0x4aabe9f8: istate->_msg          = 0x00000000
+ 0x4aabe9fc: istate->_result       = 0x705c54c0
+ 0x4aabea00: (istate->_result)     = 0x705c5040
+ 0x4aabea04: (istate->_result)     = 0x4aabe9c4
+ 0x4aabea08: istate->_prev_link    = 0x00000000
+ 0x4aabea0c: istate->_oop_temp     = 0x00000000
+ 0x4aabea10: istate->_stack_base   = 0x4aabe9dc
+ 0x4aabea14: istate->_stack_limit  = 0x4aabe9c0
+ 0x4aabea18: istate->_monitor_base = 0x4aabe9dc
+ 0x4aabea1c: istate->_self_link    = 0x4aabe9dc
+ 0x4aabea20: frame_type            = INTERPRETER_FRAME
+ 0x4aabea24: next_frame            = 0x4aabea94
+
+ 0x4aabea28: local[8]              = 0x00000000
+ 0x4aabea2c: local[7]              = 0x00000000
+ 0x4aabea30: local[6]              = 0xf8475800
+ 0x4aabea34: local[5]              = 0x0000000d
+ 0x4aabea38: local[4]              = 0x00000000
+ 0x4aabea3c: local[3]              = 0x5c9bd658
+ 0x4aabea40: local[2]              = 0x0000ea60
+ 0x4aabea44: local[1]              = 0x00000000
+ 0x4aabea48: local[0]              = 0x5ca538e0
+ 0x4aabea4c: istate->_thread       = 0x51440ee8
+ 0x4aabea50: istate->_bcp          = 0x703d4624 (bci 12)
+ 0x4aabea54: istate->_locals       = 0x4aabea98
+ 0x4aabea58: istate->_constants    = 0x703dafa0
+ 0x4aabea5c: istate->_method       = org.eclipse.jetty.util.thread.QueuedThreadPool.idleJobPoll()Ljava/lang/Runnable;
+ 0x4aabea60: istate->_mdx          = 0x4aabea40
+ 0x4aabea64: istate->_stack        = 0x4aabea38
+ 0x4aabea68: istate->_msg          = 0x00000000
+ 0x4aabea6c: istate->_result       = 0x00000000
+ 0x4aabea70: (istate->_result)     = 0x4aabea3c
+ 0x4aabea74: (istate->_result)     = 0x4aabea18
+ 0x4aabea78: istate->_prev_link    = 0x4aabea3c
+ 0x4aabea7c: istate->_oop_temp     = 0x00000000
+ 0x4aabea80: istate->_stack_base   = 0x4aabea4c
+ 0x4aabea84: istate->_stack_limit  = 0x4aabea30
+ 0x4aabea88: istate->_monitor_base = 0x4aabea4c
+ 0x4aabea8c: istate->_self_link    = 0x4aabea4c
+ 0x4aabea90: frame_type            = INTERPRETER_FRAME
+ 0x4aabea94: next_frame            = 0x4aabeae4
+
+ 0x4aabea98: local[0]              = 0x5ca53960
+ 0x4aabea9c: istate->_thread       = 0x51440ee8
+ 0x4aabeaa0: istate->_bcp          = 0x703d5071 (bci 1)
+ 0x4aabeaa4: istate->_locals       = 0x4aabeae8
+ 0x4aabeaa8: istate->_constants    = 0x703dafa0
+ 0x4aabeaac: istate->_method       = org.eclipse.jetty.util.thread.QueuedThreadPool.access$600(Lorg/eclipse/jetty/util/thread/QueuedThreadPool;)Ljava/lang/Runnable;
+ 0x4aabeab0: istate->_mdx          = 0x6fa18e78
+ 0x4aabeab4: istate->_stack        = 0x4aabea94
+ 0x4aabeab8: istate->_msg          = 0x00000000
+ 0x4aabeabc: istate->_result       = 0x00000000
+ 0x4aabeac0: (istate->_result)     = 0x00000000
+ 0x4aabeac4: (istate->_result)     = 0x00000000
+ 0x4aabeac8: istate->_prev_link    = 0x00000000
+ 0x4aabeacc: istate->_oop_temp     = 0x00000000
+ 0x4aabead0: istate->_stack_base   = 0x4aabea9c
+ 0x4aabead4: istate->_stack_limit  = 0x4aabea8c
+ 0x4aabead8: istate->_monitor_base = 0x4aabea9c
+ 0x4aabeadc: istate->_self_link    = 0x4aabea9c
+ 0x4aabeae0: frame_type            = INTERPRETER_FRAME
+ 0x4aabeae4: next_frame            = 0x4aabeb34
+
+ 0x4aabeae8: local[0]              = 0x5ca53960
+ 0x4aabeaec: istate->_thread       = 0x51440ee8
+ 0x4aabeaf0: istate->_bcp          = 0x703de53b (bci 275)
+ 0x4aabeaf4: istate->_locals       = 0x4aabeb5c
+ 0x4aabeaf8: istate->_constants    = 0x703de8c0
+ 0x4aabeafc: istate->_method       = org.eclipse.jetty.util.thread.QueuedThreadPool$3.run()V
+ 0x4aabeb00: istate->_mdx          = 0x528032e0
+ 0x4aabeb04: istate->_stack        = 0x4aabeae4
+ 0x4aabeb08: istate->_msg          = 0x00000000
+ 0x4aabeb0c: istate->_result       = 0x00000000
+ 0x4aabeb10: (istate->_result)     = 0x51440ee8
+ 0x4aabeb14: (istate->_result)     = 0x76ca2000
+ 0x4aabeb18: istate->_prev_link    = 0x52804810
+ 0x4aabeb1c: istate->_oop_temp     = 0x00000000
+ 0x4aabeb20: istate->_stack_base   = 0x4aabeaec
+ 0x4aabeb24: istate->_stack_limit  = 0x4aabeacc
+ 0x4aabeb28: istate->_monitor_base = 0x4aabeaec
+ 0x4aabeb2c: istate->_self_link    = 0x4aabeaec
+ 0x4aabeb30: frame_type            = INTERPRETER_FRAME
+ 0x4aabeb34: next_frame            = 0x4aabeba8
+
+ 0x4aabeb38: local[9]              = 0x00000000
+ 0x4aabeb3c: local[8]              = 0x00000000
+ 0x4aabeb40: local[7]              = 0xb000d1d1
+ 0x4aabeb44: local[6]              = 0x00000153
+ 0x4aabeb48: local[5]              = 0xb000643b
+ 0x4aabeb4c: local[4]              = 0x00000153
+ 0x4aabeb50: local[3]              = 0x0000000c
+ 0x4aabeb54: local[2]              = 0x00000000
+ 0x4aabeb58: local[1]              = 0x00000000
+ 0x4aabeb5c: local[0]              = 0x5ca539c8
+ 0x4aabeb60: istate->_thread       = 0x51440ee8
+ 0x4aabeb64: istate->_bcp          = 0x6fa29ae3 (bci 11)
+ 0x4aabeb68: istate->_locals       = 0x4aabebac
+ 0x4aabeb6c: istate->_constants    = 0x6fa8ac18
+ 0x4aabeb70: istate->_method       = java.lang.Thread.run()V
+ 0x4aabeb74: istate->_mdx          = 0x52400010
+ 0x4aabeb78: istate->_stack        = 0x4aabeb58
+ 0x4aabeb7c: istate->_msg          = 0x00000000
+ 0x4aabeb80: istate->_result       = 0x00000020
+ 0x4aabeb84: (istate->_result)     = 0x51351664
+ 0x4aabeb88: (istate->_result)     = 0x00000000
+ 0x4aabeb8c: istate->_prev_link    = 0x000fffff
+ 0x4aabeb90: istate->_oop_temp     = 0x00000000
+ 0x4aabeb94: istate->_stack_base   = 0x4aabeb60
+ 0x4aabeb98: istate->_stack_limit  = 0x4aabeb58
+ 0x4aabeb9c: istate->_monitor_base = 0x4aabeb60
+ 0x4aabeba0: istate->_self_link    = 0x4aabeb60
+ 0x4aabeba4: frame_type            = INTERPRETER_FRAME
+ 0x4aabeba8: next_frame            = 0x4aabebb8
+
+ 0x4aabebac: local[0]              = 0x53520360
+ 0x4aabebb0: call_wrapper          = 0x4aabec4c
+ 0x4aabebb4: frame_type            = ENTRY_FRAME
+ 0x4aabebb8: next_frame            = 0x00000000
+
+VM_Operation (0x4a8533b0): GenCollectForAllocation, mode: safepoint, requested by thread 0x516a2590
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x4b97f108 JavaThread "qtp9366254-333" [_thread_blocked, id=8264, stack(0x43280000,0x43420000)]
+  0x4ba48db8 JavaThread "qtp9366254-332" [_thread_blocked, id=8262, stack(0x43420000,0x435c0000)]
+  0x4b97dc60 JavaThread "qtp9366254-330" [_thread_blocked, id=8261, stack(0x435c0000,0x43760000)]
+  0x516ea8a8 JavaThread "qtp9366254-331" [_thread_blocked, id=8260, stack(0x43760000,0x43900000)]
+  0x516e9340 JavaThread "qtp9366254-329" [_thread_blocked, id=8258, stack(0x43900000,0x43aa0000)]
+  0x4c126b00 JavaThread "qtp9366254-328" [_thread_blocked, id=8257, stack(0x43aa0000,0x43c40000)]
+  0x50407168 JavaThread "qtp9366254-327" [_thread_blocked, id=8256, stack(0x43c40000,0x43de0000)]
+  0x516e7dd8 JavaThread "qtp9366254-326" [_thread_blocked, id=8255, stack(0x43de0000,0x43f80000)]
+  0x4b97c7b8 JavaThread "qtp9366254-325" [_thread_blocked, id=8254, stack(0x43f80000,0x44120000)]
+  0x516e6888 JavaThread "qtp9366254-324" [_thread_blocked, id=8253, stack(0x44120000,0x442c0000)]
+  0x4c15eea0 JavaThread "qtp9366254-323" [_thread_blocked, id=8251, stack(0x442c0000,0x44460000)]
+  0x5022cc30 JavaThread "qtp9366254-322" [_thread_blocked, id=8250, stack(0x44460000,0x44600000)]
+  0x514fd210 JavaThread "qtp9366254-321" [_thread_blocked, id=8248, stack(0x44600000,0x447a0000)]
+  0x516978d8 JavaThread "qtp9366254-320" [_thread_blocked, id=8247, stack(0x447a0000,0x44940000)]
+  0x514fccb8 JavaThread "qtp9366254-319" [_thread_blocked, id=8246, stack(0x44ae0000,0x44c80000)]
+  0x5022b1b0 JavaThread "qtp9366254-318" [_thread_blocked, id=8244, stack(0x44940000,0x44ae0000)]
+  0x4c166c28 JavaThread "qtp9366254-316" [_thread_blocked, id=8242, stack(0x44c80000,0x44e20000)]
+  0x50229a10 JavaThread "qtp9366254-315" [_thread_blocked, id=8241, stack(0x44e20000,0x44fc0000)]
+  0x51696370 JavaThread "qtp9366254-314" [_thread_blocked, id=8240, stack(0x44fc0000,0x45160000)]
+  0x514fb750 JavaThread "qtp9366254-313" [_thread_blocked, id=8239, stack(0x45160000,0x45300000)]
+  0x51694e08 JavaThread "qtp9366254-311" [_thread_blocked, id=8235, stack(0x45300000,0x454a0000)]
+  0x514fa1e8 JavaThread "qtp9366254-312" [_thread_blocked, id=8234, stack(0x454a0000,0x45640000)]
+  0x4d064568 JavaThread "qtp9366254-310" [_thread_blocked, id=8233, stack(0x45640000,0x457e0000)]
+  0x502cfac0 JavaThread "qtp9366254-309" [_thread_blocked, id=8232, stack(0x457e0000,0x45980000)]
+  0x4d0630d8 JavaThread "qtp9366254-308" [_thread_blocked, id=8231, stack(0x45980000,0x45b20000)]
+  0x502cb400 JavaThread "qtp9366254-307" [_thread_blocked, id=8230, stack(0x45b20000,0x45cc0000)]
+  0x516938a0 JavaThread "qtp9366254-306" [_thread_blocked, id=8228, stack(0x45cc0000,0x45e60000)]
+  0x4bca5ab8 JavaThread "qtp9366254-305" [_thread_blocked, id=8226, stack(0x45e60000,0x46000000)]
+  0x513ad008 JavaThread "qtp9366254-304" [_thread_blocked, id=8225, stack(0x46000000,0x461a0000)]
+  0x514f8c80 JavaThread "qtp9366254-303" [_thread_blocked, id=8224, stack(0x461a0000,0x46340000)]
+  0x51692338 JavaThread "qtp9366254-302" [_thread_blocked, id=8223, stack(0x46340000,0x464e0000)]
+  0x514f7718 JavaThread "qtp9366254-301" [_thread_blocked, id=8221, stack(0x464e0000,0x46680000)]
+  0x51691de0 JavaThread "qtp9366254-300" [_thread_blocked, id=8220, stack(0x46820000,0x469c0000)]
+  0x513a9cd8 JavaThread "qtp9366254-298" [_thread_blocked, id=8219, stack(0x46680000,0x46820000)]
+  0x51690890 JavaThread "qtp9366254-297" [_thread_blocked, id=8217, stack(0x469c0000,0x46b60000)]
+  0x514f61b0 JavaThread "qtp9366254-296" [_thread_blocked, id=8216, stack(0x46b60000,0x46d00000)]
+  0x501a8df8 JavaThread "qtp9366254-294" [_thread_blocked, id=8215, stack(0x46d00000,0x46ea0000)]
+  0x4bca4628 JavaThread "qtp9366254-295" [_thread_blocked, id=8214, stack(0x46ea0000,0x47040000)]
+  0x514f4c48 JavaThread "qtp9366254-293" [_thread_blocked, id=8212, stack(0x47040000,0x471e0000)]
+  0x514f36e0 JavaThread "qtp9366254-292" [_thread_blocked, id=8210, stack(0x471e0000,0x47380000)]
+  0x5168f358 JavaThread "qtp9366254-291" [_thread_blocked, id=8209, stack(0x47380000,0x47520000)]
+  0x5168de20 JavaThread "qtp9366254-290" [_thread_blocked, id=8208, stack(0x47520000,0x476c0000)]
+  0x521fcea0 JavaThread "qtp9366254-289" [_thread_blocked, id=8207, stack(0x476c0000,0x47860000)]
+  0x5210d4e8 JavaThread "qtp9366254-288" [_thread_blocked, id=8204, stack(0x47860000,0x47a00000)]
+  0x5019d148 JavaThread "qtp9366254-287" [_thread_blocked, id=8203, stack(0x47a00000,0x47ba0000)]
+  0x4d06dda0 JavaThread "qtp9366254-286" [_thread_blocked, id=8202, stack(0x47ba0000,0x47d40000)]
+  0x519ea8b8 JavaThread "qtp9366254-285" [_thread_blocked, id=8201, stack(0x47d40000,0x47ee0000)]
+  0x514f2190 JavaThread "qtp9366254-284" [_thread_blocked, id=8200, stack(0x47ee0000,0x48080000)]
+  0x514f0c80 JavaThread "qtp9366254-283" [_thread_blocked, id=8195, stack(0x48080000,0x48220000)]
+  0x5168c8e8 JavaThread "qtp9366254-282" [_thread_blocked, id=8188, stack(0x48220000,0x483c0000)]
+  0x504f5b30 JavaThread "qtp9366254-281" [_thread_blocked, id=8187, stack(0x483c0000,0x48560000)]
+  0x4c113068 JavaThread "qtp9366254-280" [_thread_blocked, id=8186, stack(0x48be0000,0x48d80000)]
+  0x52176640 JavaThread "qtp9366254-279" [_thread_blocked, id=8184, stack(0x48560000,0x48700000)]
+  0x5168b3d0 JavaThread "qtp9366254-278" [_thread_blocked, id=8183, stack(0x48700000,0x488a0000)]
+  0x514ef7d8 JavaThread "qtp9366254-277" [_thread_blocked, id=8182, stack(0x488a0000,0x48a40000)]
+  0x51689ed8 JavaThread "qtp9366254-276" [_thread_blocked, id=8181, stack(0x48a40000,0x48be0000)]
+  0x5136c4a8 JavaThread "qtp9366254-274" [_thread_blocked, id=8179, stack(0x48d80000,0x48f20000)]
+  0x4c12b6e0 JavaThread "qtp9366254-273" [_thread_blocked, id=8178, stack(0x48f20000,0x490c0000)]
+  0x516889e0 JavaThread "qtp9366254-272" [_thread_blocked, id=8177, stack(0x490c0000,0x49260000)]
+  0x5137c300 JavaThread "qtp9366254-271" [_thread_blocked, id=8176, stack(0x49260000,0x49400000)]
+  0x4c113a68 JavaThread "qtp9366254-270" [_thread_blocked, id=8175, stack(0x49400000,0x495a0000)]
+  0x4b913fd8 JavaThread "qtp9366254-269" [_thread_blocked, id=8173, stack(0x495a0000,0x49740000)]
+  0x5169f108 JavaThread "qtp9366254-268" [_thread_blocked, id=8172, stack(0x49740000,0x498e0000)]
+  0x5169dc10 JavaThread "qtp9366254-267" [_thread_blocked, id=8171, stack(0x498e0000,0x49a80000)]
+  0x4b912ac0 JavaThread "qtp9366254-266" [_thread_blocked, id=8169, stack(0x49a80000,0x49c20000)]
+  0x5169c718 JavaThread "qtp9366254-264" [_thread_blocked, id=8168, stack(0x49c20000,0x49dc0000)]
+  0x5199f570 JavaThread "qtp9366254-265" [_thread_blocked, id=8167, stack(0x49dc0000,0x49f60000)]
+  0x4c15d270 JavaThread "qtp9366254-263" [_thread_blocked, id=8166, stack(0x49f60000,0x4a100000)]
+  0x513256c8 JavaThread "qtp9366254-262" [_thread_blocked, id=8165, stack(0x4a100000,0x4a2a0000)]
+  0x4ba5b908 JavaThread "qtp9366254-261" [_thread_blocked, id=8164, stack(0x4a2a0000,0x4a440000)]
+  0x4b916ba8 JavaThread "qtp9366254-260" [_thread_blocked, id=8163, stack(0x4a440000,0x4a5e0000)]
+  0x516a1af0 JavaThread "qtp9366254-259" [_thread_blocked, id=8162, stack(0x4d164000,0x4d304000)]
+  0x514438d0 JavaThread "qtp9366254-258" [_thread_blocked, id=8161, stack(0x4bf60000,0x4c100000)]
+  0x51604e20 JavaThread "qtp9366254-257" [_thread_blocked, id=8160, stack(0x4b184000,0x4b324000)]
+  0x4c164280 JavaThread "qtp9366254-256" [_thread_blocked, id=8157, stack(0x4c980000,0x4cb20000)]
+  0x516a0ee8 JavaThread "qtp9366254-254" [_thread_blocked, id=8148, stack(0x4d304000,0x4d4a4000)]
+  0x516a0a68 JavaThread "qtp9366254-252" [_thread_blocked, id=8138, stack(0x4dcc4000,0x4de64000)]
+  0x51440ee8 JavaThread "qtp9366254-249" [_thread_blocked, id=8118, stack(0x4a920000,0x4aac0000)]
+  0x50184bb8 JavaThread "Worker-5" [_thread_blocked, id=7621, stack(0x4d7e4000,0x4d984000)]
+  0x524d80b0 JavaThread "Worker-2" [_thread_blocked, id=6830, stack(0x4aac0000,0x4ac60000)]
+  0x51e06600 JavaThread "EventAdmin Async Event Dispatcher Thread" daemon [_thread_blocked, id=6758, stack(0x4bdc0000,0x4bf60000)]
+  0x516e10f0 JavaThread "NTP Refresh Service" daemon [_thread_blocked, id=6756, stack(0x4a5e0000,0x4a780000)]
+  0x516a2590 JavaThread "Hue Refresh Service" daemon [_thread_blocked, id=6755, stack(0x4a780000,0x4a920000)]
+  0x4ba5b488 JavaThread "HTTP Refresh Service" daemon [_thread_blocked, id=6752, stack(0x4ac60000,0x4ae00000)]
+  0x75b06410 JavaThread "DestroyJavaVM" [_thread_blocked, id=6688, stack(0x75cd1000,0x75e70000)]
+  0x51282858 JavaThread "[ThreadPool Manager] - Idle Thread" daemon [_thread_blocked, id=6744, stack(0x50aaf000,0x50c4f000)]
+  0x5248c328 JavaThread "JmDNS(fe80:0:0:0:cbfc:a176:d56d:ab12%2.local.).State.Timer" [_thread_blocked, id=6739, stack(0x4c4c0000,0x4c660000)]
+  0x52489b40 JavaThread "JmDNS(fe80:0:0:0:cbfc:a176:d56d:ab12%2.local.).Timer" daemon [_thread_blocked, id=6738, stack(0x4c660000,0x4c800000)]
+  0x524878e0 JavaThread "SocketListener(fe80:0:0:0:cbfc:a176:d56d:ab12%2.local.)" daemon [_thread_in_native, id=6737, stack(0x4d4a4000,0x4d644000)]
+  0x4d0df538 JavaThread "com.google.inject.internal.util.$Finalizer" daemon [_thread_blocked, id=6735, stack(0x4cb20000,0x4ccc0000)]
+  0x5244af28 JavaThread "FolderObserver" daemon [_thread_blocked, id=6734, stack(0x4ccc0000,0x4ce60000)]
+  0x4d00c898 JavaThread "Worker-JM" [_thread_blocked, id=6733, stack(0x4ce60000,0x4d000000)]
+  0x5216ff38 JavaThread "openHAB-job-scheduler_QuartzSchedulerThread" [_thread_blocked, id=6729, stack(0x4d644000,0x4d7e4000)]
+  0x5216cb88 JavaThread "openHAB-job-scheduler_Worker-2" [_thread_blocked, id=6727, stack(0x4d984000,0x4db24000)]
+  0x52183c60 JavaThread "openHAB-job-scheduler_Worker-1" [_thread_blocked, id=6726, stack(0x4db24000,0x4dcc4000)]
+  0x51604300 JavaThread "qtp9366254-46 Acceptor1 SslSelectChannelConnector@0.0.0.0:8443" [_thread_blocked, id=6723, stack(0x4de64000,0x4e004000)]
+  0x51400c40 JavaThread "qtp9366254-45 Acceptor0 SslSelectChannelConnector@0.0.0.0:8443" [_thread_in_native, id=6722, stack(0x4e004000,0x4e1a4000)]
+  0x51907258 JavaThread "[ThreadPool Manager] - Idle Thread" daemon [_thread_blocked, id=6721, stack(0x4e1a4000,0x4e344000)]
+  0x5027fcd8 JavaThread "HashSessionScavenger-2" daemon [_thread_blocked, id=6720, stack(0x4e344000,0x4e4e4000)]
+  0x4e97ef48 JavaThread "qtp9366254-42 Selector1" [_thread_blocked, id=6719, stack(0x4e4e4000,0x4e684000)]
+  0x5194c880 JavaThread "Scanner-2" daemon [_thread_blocked, id=6718, stack(0x4ea40000,0x4ebe0000)]
+  0x5194b3f8 JavaThread "Scanner-1" daemon [_thread_blocked, id=6717, stack(0x4ebe0000,0x4ed80000)]
+  0x51953458 JavaThread "HashSessionScavenger-1" daemon [_thread_blocked, id=6716, stack(0x4ed80000,0x4ef20000)]
+  0x51947440 JavaThread "HashSessionScavenger-0" daemon [_thread_blocked, id=6715, stack(0x4ef20000,0x4f0c0000)]
+  0x5048b9c0 JavaThread "Scanner-0" daemon [_thread_blocked, id=6714, stack(0x4f0c0000,0x4f260000)]
+  0x50489b08 JavaThread "qtp9366254-36 Selector0" [_thread_blocked, id=6713, stack(0x4f260000,0x4f400000)]
+  0x504885c0 JavaThread "qtp9366254-35 Acceptor1 SelectChannelConnector@0.0.0.0:8082" [_thread_blocked, id=6712, stack(0x4f400000,0x4f5a0000)]
+  0x50486ef8 JavaThread "qtp9366254-34 Acceptor0 SelectChannelConnector@0.0.0.0:8082" [_thread_in_native, id=6711, stack(0x4f5a0000,0x4f740000)]
+  0x50485b10 JavaThread "qtp9366254-33 Selector1" [_thread_in_native, id=6710, stack(0x4f740000,0x4f8e0000)]
+  0x50484150 JavaThread "qtp9366254-32 Selector0" [_thread_in_native, id=6709, stack(0x4f8e0000,0x4fa80000)]
+  0x50483848 JavaThread "org.eclipse.jetty.util.RolloverFileOutputStream" daemon [_thread_blocked, id=6708, stack(0x4ff60000,0x50100000)]
+  0x5133dbd8 JavaThread "Gogo shell" daemon [_thread_in_native, id=6707, stack(0x4fa80000,0x4fc20000)]
+  0x513fd680 JavaThread "[Timer] - Main Queue Handler" daemon [_thread_blocked, id=6706, stack(0x4fc20000,0x4fdc0000)]
+  0x501443e8 JavaThread "fileinstall-addons" daemon [_thread_blocked, id=6704, stack(0x4fdc0000,0x4ff60000)]
+  0x502fdb68 JavaThread "Bundle File Closer" daemon [_thread_blocked, id=6701, stack(0x505cf000,0x5076f000)]
+  0x512844c8 JavaThread "Start Level Event Dispatcher" daemon [_thread_blocked, id=6699, stack(0x5076f000,0x5090f000)]
+  0x5124e588 JavaThread "Framework Event Dispatcher" daemon [_thread_blocked, id=6698, stack(0x5090f000,0x50aaf000)]
+  0x512276a8 JavaThread "Framework Active Thread" [_thread_blocked, id=6695, stack(0x50c4f000,0x50def000)]
+  0x75b76ef8 JavaThread "Service Thread" daemon [_thread_blocked, id=6693, stack(0x51760000,0x51900000)]
+  0x75b75488 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6692, stack(0x51ad7000,0x51c77000)]
+  0x75b63f80 JavaThread "Finalizer" daemon [_thread_blocked, id=6691, stack(0x51f60000,0x52100000)]
+  0x75b62a08 JavaThread "Reference Handler" daemon [_thread_blocked, id=6690, stack(0x52260000,0x52400000)]
+
+Other Threads:
+=>0x75b600e0 VMThread [stack: 0x52588000,0x52607000] [id=6689]
+  0x75b78b90 WatcherThread [stack: 0x52508000,0x52587000] [id=6694]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x75b05660] Threads_lock - owner thread: 0x75b600e0
+[0x75b05a70] Heap_lock - owner thread: 0x516a2590
+
+Heap
+ def new generation   total 12672K, used 11531K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,  99% used [0x52a00000, 0x5351fff8, 0x53520000)
+  from space 1280K,  10% used [0x53660000, 0x53682e38, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53522a30, 0x53660000)
+ tenured generation   total 27660K, used 16847K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d513ee0, 0x5d514000, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+
+Card table byte_map: [0x528f7000,0x52a00000] byte_map_base: 0x52662000
+
+Polling page: 0x76f22000
+
+Code Cache  [0x73acc000, 0x73af4000, 0x75acc000)
+ total_blobs=142 nmethods=0 adapters=135 free_code_cache=32694Kb largest_free_block=33478784
+
+Compilation events (0 events):
+No events
+
+GC Heap History (10 events):
+Event: 8983.097 GC heap after
+Heap after GC invocations=86 (full 7):
+ def new generation   total 12672K, used 112K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,   0% used [0x52a00000, 0x52a00000, 0x53520000)
+  from space 1280K,   8% used [0x53660000, 0x5367c3e8, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16823K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d50dd60, 0x5d50de00, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+}
+Event: 9230.605 GC heap before
+{Heap before GC invocations=86 (full 7):
+ def new generation   total 12672K, used 11504K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K, 100% used [0x52a00000, 0x53520000, 0x53520000)
+  from space 1280K,   8% used [0x53660000, 0x5367c3e8, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16823K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d50dd60, 0x5d50de00, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+Event: 9230.623 GC heap after
+Heap after GC invocations=87 (full 7):
+ def new generation   total 12672K, used 136K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,   0% used [0x52a00000, 0x52a00000, 0x53520000)
+  from space 1280K,  10% used [0x53520000, 0x53542220, 0x53660000)
+  to   space 1280K,   0% used [0x53660000, 0x53660000, 0x537a0000)
+ tenured generation   total 27660K, used 16828K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d50f318, 0x5d50f400, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+}
+Event: 9452.186 GC heap before
+{Heap before GC invocations=87 (full 7):
+ def new generation   total 12672K, used 11528K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,  99% used [0x52a00000, 0x5351ffc8, 0x53520000)
+  from space 1280K,  10% used [0x53520000, 0x53542220, 0x53660000)
+  to   space 1280K,   0% used [0x53660000, 0x53660000, 0x537a0000)
+ tenured generation   total 27660K, used 16828K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d50f318, 0x5d50f400, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+Event: 9452.196 GC heap after
+Heap after GC invocations=88 (full 7):
+ def new generation   total 12672K, used 160K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,   0% used [0x52a00000, 0x52a00000, 0x53520000)
+  from space 1280K,  12% used [0x53660000, 0x53688270, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16835K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d510ea0, 0x5d511000, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+}
+Event: 9663.597 GC heap before
+{Heap before GC invocations=88 (full 7):
+ def new generation   total 12672K, used 11552K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K, 100% used [0x52a00000, 0x53520000, 0x53520000)
+  from space 1280K,  12% used [0x53660000, 0x53688270, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16835K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d510ea0, 0x5d511000, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+Event: 9663.609 GC heap after
+Heap after GC invocations=89 (full 7):
+ def new generation   total 12672K, used 205K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,   0% used [0x52a00000, 0x52a00000, 0x53520000)
+  from space 1280K,  16% used [0x53520000, 0x53553480, 0x53660000)
+  to   space 1280K,   0% used [0x53660000, 0x53660000, 0x537a0000)
+ tenured generation   total 27660K, used 16841K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d5126d0, 0x5d512800, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+}
+Event: 9904.887 GC heap before
+{Heap before GC invocations=89 (full 7):
+ def new generation   total 12672K, used 11597K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,  99% used [0x52a00000, 0x5351fff8, 0x53520000)
+  from space 1280K,  16% used [0x53520000, 0x53553480, 0x53660000)
+  to   space 1280K,   0% used [0x53660000, 0x53660000, 0x537a0000)
+ tenured generation   total 27660K, used 16841K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d5126d0, 0x5d512800, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+Event: 9904.902 GC heap after
+Heap after GC invocations=90 (full 7):
+ def new generation   total 12672K, used 139K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,   0% used [0x52a00000, 0x52a00000, 0x53520000)
+  from space 1280K,  10% used [0x53660000, 0x53682e38, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16847K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d513ee0, 0x5d514000, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+}
+Event: 10136.955 GC heap before
+{Heap before GC invocations=90 (full 7):
+ def new generation   total 12672K, used 11531K [0x52a00000, 0x537a0000, 0x5c4a0000)
+  eden space 11392K,  99% used [0x52a00000, 0x5351fff8, 0x53520000)
+  from space 1280K,  10% used [0x53660000, 0x53682e38, 0x537a0000)
+  to   space 1280K,   0% used [0x53520000, 0x53520000, 0x53660000)
+ tenured generation   total 27660K, used 16847K [0x5c4a0000, 0x5dfa3000, 0x6fa00000)
+   the space 27660K,  60% used [0x5c4a0000, 0x5d513ee0, 0x5d514000, 0x5dfa3000)
+ compacting perm gen  total 30720K, used 30528K [0x6fa00000, 0x71800000, 0x73a00000)
+   the space 30720K,  99% used [0x6fa00000, 0x717d02d0, 0x717d0400, 0x71800000)
+No shared spaces configured.
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 10136.941 Thread 0x516a2590 Threw 0x5350e9b0 at [Bytecoce Interpreter]:99
+Event: 10136.941 Thread 0x516a2590 Threw 0x5350f578 at [Bytecoce Interpreter]:99
+Event: 10136.942 Thread 0x516a2590 Threw 0x5350fd20 at [Bytecoce Interpreter]:99
+Event: 10136.942 Thread 0x516a2590 Threw 0x53510598 at [Bytecoce Interpreter]:99
+Event: 10136.944 Thread 0x516a2590 Threw 0x53512e68 at [Bytecoce Interpreter]:99
+Event: 10136.951 Thread 0x516a2590 Threw 0x5351d710 at [Bytecoce Interpreter]:99
+Event: 10136.952 Thread 0x516a2590 Threw 0x5351ded8 at [Bytecoce Interpreter]:99
+Event: 10136.952 Thread 0x516a2590 Threw 0x5351e588 at [Bytecoce Interpreter]:99
+Event: 10136.953 Thread 0x516a2590 Threw 0x5351efd8 at [Bytecoce Interpreter]:99
+Event: 10136.953 Thread 0x516a2590 Threw 0x5351f780 at [Bytecoce Interpreter]:99
+
+Events (10 events):
+Event: 10096.098 Thread 0x50407168 Thread added: 0x50407168
+Event: 10096.099 Thread 0x4c126b00 Thread added: 0x4c126b00
+Event: 10105.731 Thread 0x516e9340 Thread added: 0x516e9340
+Event: 10116.297 Thread 0x516ea8a8 Thread added: 0x516ea8a8
+Event: 10116.298 Thread 0x4b97dc60 Thread added: 0x4b97dc60
+Event: 10116.531 Thread 0x4ba48db8 Thread added: 0x4ba48db8
+Event: 10126.714 Thread 0x4b97f108 Thread added: 0x4b97f108
+Event: 10126.715 Thread 0x516ebe10 Thread added: 0x516ebe10
+Event: 10126.716 Thread 0x516ebe10 Thread exited: 0x516ebe10
+Event: 10136.953 Executing VM operation: GenCollectForAllocation
+
+
+Dynamic libraries:
+00010000-00011000 r-xp 00000000 b3:02 272916     /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/java
+00020000-00021000 r--p 00000000 b3:02 272916     /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/java
+00021000-00022000 rw-p 00001000 b3:02 272916     /usr/lib/jvm/java-7-openjdk-armhf/jre/bin/java
+003df000-00421000 rw-p 00000000 00:00 0          [heap]
+430e0000-430e3000 ---p 00000000 00:00 0 
+430e3000-43280000 rwxp 00000000 00:00 0 
+43280000-43283000 ---p 00000000 00:00 0 
+43283000-43420000 rwxp 00000000 00:00 0          [stack:8264]
+43420000-43423000 ---p 00000000 00:00 0 
+43423000-435c0000 rwxp 00000000 00:00 0          [stack:8262]
+435c0000-435c3000 ---p 00000000 00:00 0 
+435c3000-43760000 rwxp 00000000 00:00 0          [stack:8261]
+43760000-43763000 ---p 00000000 00:00 0 
+43763000-43900000 rwxp 00000000 00:00 0          [stack:8260]
+43900000-43903000 ---p 00000000 00:00 0 
+43903000-43aa0000 rwxp 00000000 00:00 0          [stack:8258]
+43aa0000-43aa3000 ---p 00000000 00:00 0 
+43aa3000-43c40000 rwxp 00000000 00:00 0          [stack:8257]
+43c40000-43c43000 ---p 00000000 00:00 0 
+43c43000-43de0000 rwxp 00000000 00:00 0          [stack:8256]
+43de0000-43de3000 ---p 00000000 00:00 0 
+43de3000-43f80000 rwxp 00000000 00:00 0          [stack:8255]
+43f80000-43f83000 ---p 00000000 00:00 0 
+43f83000-44120000 rwxp 00000000 00:00 0          [stack:8254]
+44120000-44123000 ---p 00000000 00:00 0 
+44123000-442c0000 rwxp 00000000 00:00 0          [stack:8253]
+442c0000-442c3000 ---p 00000000 00:00 0 
+442c3000-44460000 rwxp 00000000 00:00 0          [stack:8251]
+44460000-44463000 ---p 00000000 00:00 0 
+44463000-44600000 rwxp 00000000 00:00 0          [stack:8250]
+44600000-44603000 ---p 00000000 00:00 0 
+44603000-447a0000 rwxp 00000000 00:00 0          [stack:8248]
+447a0000-447a3000 ---p 00000000 00:00 0 
+447a3000-44940000 rwxp 00000000 00:00 0          [stack:8247]
+44940000-44943000 ---p 00000000 00:00 0 
+44943000-44ae0000 rwxp 00000000 00:00 0          [stack:8244]
+44ae0000-44ae3000 ---p 00000000 00:00 0 
+44ae3000-44c80000 rwxp 00000000 00:00 0          [stack:8246]
+44c80000-44c83000 ---p 00000000 00:00 0 
+44c83000-44e20000 rwxp 00000000 00:00 0          [stack:8242]
+44e20000-44e23000 ---p 00000000 00:00 0 
+44e23000-44fc0000 rwxp 00000000 00:00 0          [stack:8241]
+44fc0000-44fc3000 ---p 00000000 00:00 0 
+44fc3000-45160000 rwxp 00000000 00:00 0          [stack:8240]
+45160000-45163000 ---p 00000000 00:00 0 
+45163000-45300000 rwxp 00000000 00:00 0          [stack:8239]
+45300000-45303000 ---p 00000000 00:00 0 
+45303000-454a0000 rwxp 00000000 00:00 0          [stack:8235]
+454a0000-454a3000 ---p 00000000 00:00 0 
+454a3000-45640000 rwxp 00000000 00:00 0          [stack:8234]
+45640000-45643000 ---p 00000000 00:00 0 
+45643000-457e0000 rwxp 00000000 00:00 0          [stack:8233]
+457e0000-457e3000 ---p 00000000 00:00 0 
+457e3000-45980000 rwxp 00000000 00:00 0          [stack:8232]
+45980000-45983000 ---p 00000000 00:00 0 
+45983000-45b20000 rwxp 00000000 00:00 0          [stack:8231]
+45b20000-45b23000 ---p 00000000 00:00 0 
+45b23000-45cc0000 rwxp 00000000 00:00 0          [stack:8230]
+45cc0000-45cc3000 ---p 00000000 00:00 0 
+45cc3000-45e60000 rwxp 00000000 00:00 0          [stack:8228]
+45e60000-45e63000 ---p 00000000 00:00 0 
+45e63000-46000000 rwxp 00000000 00:00 0          [stack:8226]
+46000000-46003000 ---p 00000000 00:00 0 
+46003000-461a0000 rwxp 00000000 00:00 0          [stack:8225]
+461a0000-461a3000 ---p 00000000 00:00 0 
+461a3000-46340000 rwxp 00000000 00:00 0          [stack:8224]
+46340000-46343000 ---p 00000000 00:00 0 
+46343000-464e0000 rwxp 00000000 00:00 0          [stack:8223]
+464e0000-464e3000 ---p 00000000 00:00 0 
+464e3000-46680000 rwxp 00000000 00:00 0          [stack:8221]
+46680000-46683000 ---p 00000000 00:00 0 
+46683000-46820000 rwxp 00000000 00:00 0          [stack:8219]
+46820000-46823000 ---p 00000000 00:00 0 
+46823000-469c0000 rwxp 00000000 00:00 0          [stack:8220]
+469c0000-469c3000 ---p 00000000 00:00 0 
+469c3000-46b60000 rwxp 00000000 00:00 0          [stack:8217]
+46b60000-46b63000 ---p 00000000 00:00 0 
+46b63000-46d00000 rwxp 00000000 00:00 0          [stack:8216]
+46d00000-46d03000 ---p 00000000 00:00 0 
+46d03000-46ea0000 rwxp 00000000 00:00 0          [stack:8215]
+46ea0000-46ea3000 ---p 00000000 00:00 0 
+46ea3000-47040000 rwxp 00000000 00:00 0          [stack:8214]
+47040000-47043000 ---p 00000000 00:00 0 
+47043000-471e0000 rwxp 00000000 00:00 0          [stack:8212]
+471e0000-471e3000 ---p 00000000 00:00 0 
+471e3000-47380000 rwxp 00000000 00:00 0          [stack:8210]
+47380000-47383000 ---p 00000000 00:00 0 
+47383000-47520000 rwxp 00000000 00:00 0          [stack:8209]
+47520000-47523000 ---p 00000000 00:00 0 
+47523000-476c0000 rwxp 00000000 00:00 0          [stack:8208]
+476c0000-476c3000 ---p 00000000 00:00 0 
+476c3000-47860000 rwxp 00000000 00:00 0          [stack:8207]
+47860000-47863000 ---p 00000000 00:00 0 
+47863000-47a00000 rwxp 00000000 00:00 0          [stack:8204]
+47a00000-47a03000 ---p 00000000 00:00 0 
+47a03000-47ba0000 rwxp 00000000 00:00 0          [stack:8203]
+47ba0000-47ba3000 ---p 00000000 00:00 0 
+47ba3000-47d40000 rwxp 00000000 00:00 0          [stack:8202]
+47d40000-47d43000 ---p 00000000 00:00 0 
+47d43000-47ee0000 rwxp 00000000 00:00 0          [stack:8201]
+47ee0000-47ee3000 ---p 00000000 00:00 0 
+47ee3000-48080000 rwxp 00000000 00:00 0          [stack:8200]
+48080000-48083000 ---p 00000000 00:00 0 
+48083000-48220000 rwxp 00000000 00:00 0          [stack:8195]
+48220000-48223000 ---p 00000000 00:00 0 
+48223000-483c0000 rwxp 00000000 00:00 0          [stack:8188]
+483c0000-483c3000 ---p 00000000 00:00 0 
+483c3000-48560000 rwxp 00000000 00:00 0          [stack:8187]
+48560000-48563000 ---p 00000000 00:00 0 
+48563000-48700000 rwxp 00000000 00:00 0          [stack:8184]
+48700000-48703000 ---p 00000000 00:00 0 
+48703000-488a0000 rwxp 00000000 00:00 0          [stack:8183]
+488a0000-488a3000 ---p 00000000 00:00 0 
+488a3000-48a40000 rwxp 00000000 00:00 0          [stack:8182]
+48a40000-48a43000 ---p 00000000 00:00 0 
+48a43000-48be0000 rwxp 00000000 00:00 0          [stack:8181]
+48be0000-48be3000 ---p 00000000 00:00 0 
+48be3000-48d80000 rwxp 00000000 00:00 0          [stack:8186]
+48d80000-48d83000 ---p 00000000 00:00 0 
+48d83000-48f20000 rwxp 00000000 00:00 0          [stack:8179]
+48f20000-48f23000 ---p 00000000 00:00 0 
+48f23000-490c0000 rwxp 00000000 00:00 0          [stack:8178]
+490c0000-490c3000 ---p 00000000 00:00 0 
+490c3000-49260000 rwxp 00000000 00:00 0          [stack:8177]
+49260000-49263000 ---p 00000000 00:00 0 
+49263000-49400000 rwxp 00000000 00:00 0          [stack:8176]
+49400000-49403000 ---p 00000000 00:00 0 
+49403000-495a0000 rwxp 00000000 00:00 0          [stack:8175]
+495a0000-495a3000 ---p 00000000 00:00 0 
+495a3000-49740000 rwxp 00000000 00:00 0          [stack:8173]
+49740000-49743000 ---p 00000000 00:00 0 
+49743000-498e0000 rwxp 00000000 00:00 0          [stack:8172]
+498e0000-498e3000 ---p 00000000 00:00 0 
+498e3000-49a80000 rwxp 00000000 00:00 0          [stack:8171]
+49a80000-49a83000 ---p 00000000 00:00 0 
+49a83000-49c20000 rwxp 00000000 00:00 0          [stack:8169]
+49c20000-49c23000 ---p 00000000 00:00 0 
+49c23000-49dc0000 rwxp 00000000 00:00 0          [stack:8168]
+49dc0000-49dc3000 ---p 00000000 00:00 0 
+49dc3000-49f60000 rwxp 00000000 00:00 0          [stack:8167]
+49f60000-49f63000 ---p 00000000 00:00 0 
+49f63000-4a100000 rwxp 00000000 00:00 0          [stack:8166]
+4a100000-4a103000 ---p 00000000 00:00 0 
+4a103000-4a2a0000 rwxp 00000000 00:00 0          [stack:8165]
+4a2a0000-4a2a3000 ---p 00000000 00:00 0 
+4a2a3000-4a440000 rwxp 00000000 00:00 0          [stack:8164]
+4a440000-4a443000 ---p 00000000 00:00 0 
+4a443000-4a5e0000 rwxp 00000000 00:00 0          [stack:8163]
+4a5e0000-4a5e3000 ---p 00000000 00:00 0 
+4a5e3000-4a780000 rwxp 00000000 00:00 0          [stack:6756]
+4a780000-4a783000 ---p 00000000 00:00 0 
+4a783000-4a920000 rwxp 00000000 00:00 0          [stack:6755]
+4a920000-4a923000 ---p 00000000 00:00 0 
+4a923000-4aac0000 rwxp 00000000 00:00 0          [stack:8118]
+4aac0000-4aac3000 ---p 00000000 00:00 0 
+4aac3000-4ac60000 rwxp 00000000 00:00 0          [stack:6830]
+4ac60000-4ac63000 ---p 00000000 00:00 0 
+4ac63000-4ae00000 rwxp 00000000 00:00 0          [stack:6752]
+4ae00000-4ae3a000 rw-p 00000000 00:00 0 
+4ae3a000-4af00000 ---p 00000000 00:00 0 
+4b000000-4b0fd000 rw-p 00000000 00:00 0 
+4b0fd000-4b100000 ---p 00000000 00:00 0 
+4b102000-4b103000 r--s 00003000 b3:02 271198     /opt/openhab/server/plugins/org.eclipse.xtext.ecore_2.3.0.v201206120633.jar
+4b103000-4b105000 r--s 0000c000 b3:02 271261     /opt/openhab/server/plugins/org.apache.commons.codec_1.3.0.v201101211617.jar
+4b105000-4b107000 r--s 0000b000 b3:02 271291     /opt/openhab/server/plugins/org.eclipse.e4.core.di_1.2.0.v20121024-173149.jar
+4b107000-4b109000 r--s 0000e000 b3:02 271264     /opt/openhab/server/plugins/org.apache.commons.exec_1.1.0.v201301240602.jar
+4b109000-4b10a000 r--s 00004000 b3:02 271295     /opt/openhab/server/plugins/org.eclipse.ecf.provider.filetransfer.httpclient.ssl_1.0.0.v20120610-1946.jar
+4b10a000-4b10d000 r--s 00010000 b3:02 271296     /opt/openhab/server/plugins/org.eclipse.ecf.provider.filetransfer.httpclient_4.0.200.v20120610-1946.jar
+4b10d000-4b10f000 r--s 00008000 b3:02 271217     /opt/openhab/server/plugins/org.eclipse.jetty.rewrite_8.1.3.v20120522.jar
+4b10f000-4b112000 r--s 0001a000 b3:02 271234     /opt/openhab/server/plugins/javax.xml.bind_2.2.0.v201105210648.jar
+4b112000-4b117000 r--s 00043000 b3:02 271269     /opt/openhab/server/plugins/org.apache.commons.net_3.2.0.v201305141515.jar
+4b117000-4b11c000 r--s 00025000 b3:02 271279     /opt/openhab/server/plugins/org.eclipse.core.databinding.property_1.4.100.v20120523-1955.jar
+4b11c000-4b124000 r--s 000f0000 b3:02 271301     /opt/openhab/server/plugins/org.eclipse.emf.codegen.ecore_2.8.2.v20130125-0826.jar
+4b124000-4b127000 r--s 00015000 b3:02 271216     /opt/openhab/server/plugins/org.eclipse.jetty.security_8.1.3.v20120522.jar
+4b127000-4b129000 r--s 00009000 b3:02 271338     /opt/openhab/server/plugins/org.eclipse.equinox.p2.transport.ecf_1.0.100.v20120913-155635.jar
+4b129000-4b12b000 r--s 0002b000 b3:02 271241     /opt/openhab/server/plugins/com.ibm.icu.base_50.1.1.v201304230130.jar
+4b12b000-4b12e000 r--s 00018000 b3:02 271276     /opt/openhab/server/plugins/org.eclipse.core.commands_3.6.2.v20130123-162658.jar
+4b12e000-4b132000 r--s 0001f000 b3:02 271164     /opt/openhab/server/plugins/org.sat4j.pb_2.3.0.v20110329.jar
+4b132000-4b134000 r--s 00004000 b3:02 271316     /opt/openhab/server/plugins/org.eclipse.equinox.concurrent_1.0.300.v20120912-130548.jar
+4b134000-4b139000 r--s 0002d000 b3:02 271280     /opt/openhab/server/plugins/org.eclipse.core.databinding_1.4.1.v20120912-132807.jar
+4b139000-4b13b000 r--s 00003000 b3:02 271288     /opt/openhab/server/plugins/org.eclipse.e4.core.commands_0.10.1.v20120523-1955.jar
+4b13b000-4b13d000 r--s 00006000 b3:02 271311     /opt/openhab/server/plugins/org.eclipse.emf.mwe2.lib_2.3.0.v201206110920.jar
+4b13d000-4b140000 r--s 00017000 b3:02 271214     /opt/openhab/server/plugins/org.eclipse.jetty.servlet_8.1.3.v20120522.jar
+4b140000-4b145000 r--s 00011000 b3:02 271157     /opt/openhab/server/plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar
+4b145000-4b14a000 r--s 00038000 b3:02 271204     /opt/openhab/server/plugins/org.eclipse.text_3.5.200.v20120523-1310.jar
+4b14a000-4b14c000 r--s 00007000 b3:02 271159     /opt/openhab/server/plugins/org.w3c.css.sac_1.3.1.v200903091627.jar
+4b14c000-4b14e000 r--s 0000c000 b3:02 271240     /opt/openhab/server/plugins/javax.activation_1.1.0.v201211130549.jar
+4b14e000-4b15a000 r--s 00075000 b3:02 271200     /opt/openhab/server/plugins/org.eclipse.xtend_1.1.0.v201108020519.jar
+4b15a000-4b15e000 r--s 0001c000 b3:02 271298     /opt/openhab/server/plugins/org.eclipse.ecf.provider.filetransfer_3.2.0.v20120610-1946.jar
+4b15e000-4b160000 r--s 0000a000 b3:02 271268     /opt/openhab/server/plugins/org.apache.commons.logging_1.0.4.v201101211617.jar
+4b160000-4b165000 r--s 00042000 b3:02 271302     /opt/openhab/server/plugins/org.eclipse.emf.codegen_2.8.0.v20130125-0826.jar
+4b165000-4b172000 r--s 00089000 b3:02 271263     /opt/openhab/server/plugins/org.apache.commons.collections_3.2.0.v2013030210310.jar
+4b172000-4b177000 r--s 0002e000 b3:02 271275     /opt/openhab/server/plugins/org.apache.httpcomponents.httpcore_4.1.4.v201203221030.jar
+4b177000-4b17a000 r--s 00010000 b3:02 271262     /opt/openhab/server/plugins/org.apache.commons.codec_1.4.0.v201209201156.jar
+4b184000-4b187000 ---p 00000000 00:00 0 
+4b187000-4b324000 rwxp 00000000 00:00 0          [stack:8160]
+4b324000-4b35f000 r-xp 00000000 b3:02 3140       /lib/arm-linux-gnueabihf/libdbus-1.so.3.8.13
+4b35f000-4b36e000 ---p 0003b000 b3:02 3140       /lib/arm-linux-gnueabihf/libdbus-1.so.3.8.13
+4b36e000-4b36f000 r--p 0003a000 b3:02 3140       /lib/arm-linux-gnueabihf/libdbus-1.so.3.8.13
+4b36f000-4b370000 rw-p 0003b000 b3:02 3140       /lib/arm-linux-gnueabihf/libdbus-1.so.3.8.13
+4b370000-4b3d1000 r-xp 00000000 b3:02 25169      /usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0
+4b3d1000-4b3e0000 ---p 00061000 b3:02 25169      /usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0
+4b3e0000-4b3e1000 r--p 00060000 b3:02 25169      /usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0
+4b3e1000-4b3e2000 rw-p 00061000 b3:02 25169      /usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0
+4b3e2000-4b409000 r-xp 00000000 b3:02 25239      /usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5
+4b409000-4b419000 ---p 00027000 b3:02 25239      /usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5
+4b419000-4b41a000 r--p 00027000 b3:02 25239      /usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5
+4b41a000-4b41b000 rw-p 00028000 b3:02 25239      /usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5
+4b41b000-4b44a000 r-xp 00000000 b3:02 25304      /usr/lib/arm-linux-gnueabihf/libnettle.so.4.7
+4b44a000-4b459000 ---p 0002f000 b3:02 25304      /usr/lib/arm-linux-gnueabihf/libnettle.so.4.7
+4b459000-4b45a000 r--p 0002e000 b3:02 25304      /usr/lib/arm-linux-gnueabihf/libnettle.so.4.7
+4b45a000-4b45b000 rw-p 0002f000 b3:02 25304      /usr/lib/arm-linux-gnueabihf/libnettle.so.4.7
+4b45b000-4b469000 r-xp 00000000 b3:02 25419      /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2
+4b469000-4b479000 ---p 0000e000 b3:02 25419      /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2
+4b479000-4b47a000 r--p 0000e000 b3:02 25419      /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2
+4b47a000-4b47b000 rw-p 0000f000 b3:02 25419      /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2
+4b47b000-4b4a7000 r-xp 00000000 b3:02 25334      /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0
+4b4a7000-4b4b6000 ---p 0002c000 b3:02 25334      /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0
+4b4b6000-4b4bb000 r--p 0002b000 b3:02 25334      /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0
+4b4bb000-4b4bc000 rw-p 00030000 b3:02 25334      /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0
+4b4bc000-4b4c4000 r-xp 00000000 b3:02 25267      /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+4b4c4000-4b4d3000 ---p 00008000 b3:02 25267      /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+4b4d3000-4b4d4000 r--p 00007000 b3:02 25267      /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+4b4d4000-4b4d5000 rw-p 00008000 b3:02 25267      /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+4b4d5000-4b4d7000 r-xp 00000000 b3:02 3137       /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+4b4d7000-4b4e6000 ---p 00002000 b3:02 3137       /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+4b4e6000-4b4e7000 r--p 00001000 b3:02 3137       /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+4b4e7000-4b4e8000 rw-p 00002000 b3:02 3137       /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+4b4e8000-4b513000 r-xp 00000000 b3:02 25264      /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+4b513000-4b523000 ---p 0002b000 b3:02 25264      /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+4b523000-4b524000 r--p 0002b000 b3:02 25264      /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+4b524000-4b525000 rw-p 0002c000 b3:02 25264      /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+4b525000-4b526000 rw-p 00000000 00:00 0 
+4b526000-4b5c3000 r-xp 00000000 b3:02 25266      /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+4b5c3000-4b5d2000 ---p 0009d000 b3:02 25266      /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+4b5d2000-4b5d8000 r--p 0009c000 b3:02 25266      /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+4b5d8000-4b5da000 rw-p 000a2000 b3:02 25266      /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+4b5da000-4b5f9000 r-xp 00000000 b3:02 3196       /lib/arm-linux-gnueabihf/libpng12.so.0.50.0
+4b5f9000-4b608000 ---p 0001f000 b3:02 3196       /lib/arm-linux-gnueabihf/libpng12.so.0.50.0
+4b608000-4b609000 r--p 0001e000 b3:02 3196       /lib/arm-linux-gnueabihf/libpng12.so.0.50.0
+4b609000-4b60a000 rw-p 0001f000 b3:02 3196       /lib/arm-linux-gnueabihf/libpng12.so.0.50.0
+4b60a000-4b629000 r-xp 00000000 b3:02 3146       /lib/arm-linux-gnueabihf/libexpat.so.1.6.0
+4b629000-4b639000 ---p 0001f000 b3:02 3146       /lib/arm-linux-gnueabihf/libexpat.so.1.6.0
+4b639000-4b63b000 r--p 0001f000 b3:02 3146       /lib/arm-linux-gnueabihf/libexpat.so.1.6.0
+4b63b000-4b63c000 rw-p 00021000 b3:02 3146       /lib/arm-linux-gnueabihf/libexpat.so.1.6.0
+4b63c000-4b64a000 r-xp 00000000 b3:02 25025      /usr/lib/arm-linux-gnueabihf/libavahi-client.so.3.2.9
+4b64a000-4b659000 ---p 0000e000 b3:02 25025      /usr/lib/arm-linux-gnueabihf/libavahi-client.so.3.2.9
+4b659000-4b65a000 r--p 0000d000 b3:02 25025      /usr/lib/arm-linux-gnueabihf/libavahi-client.so.3.2.9
+4b65a000-4b65b000 rw-p 0000e000 b3:02 25025      /usr/lib/arm-linux-gnueabihf/libavahi-client.so.3.2.9
+4b65b000-4b751000 r-xp 00000000 b3:02 25171      /usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28.41.0
+4b751000-4b761000 ---p 000f6000 b3:02 25171      /usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28.41.0
+4b761000-4b766000 r--p 000f6000 b3:02 25171      /usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28.41.0
+4b766000-4b768000 rw-p 000fb000 b3:02 25171      /usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28.41.0
+4b768000-4b7ec000 r-xp 00000000 b3:02 25147      /usr/lib/arm-linux-gnueabihf/libfreetype.so.6.12.0
+4b7ec000-4b7fb000 ---p 00084000 b3:02 25147      /usr/lib/arm-linux-gnueabihf/libfreetype.so.6.12.0
+4b7fb000-4b7ff000 r--p 00083000 b3:02 25147      /usr/lib/arm-linux-gnueabihf/libfreetype.so.6.12.0
+4b7ff000-4b800000 rw-p 00087000 b3:02 25147      /usr/lib/arm-linux-gnueabihf/libfreetype.so.6.12.0
+4b800000-4b8fd000 rw-p 00000000 00:00 0 
+4b8fd000-4b900000 ---p 00000000 00:00 0 
+4b900000-4b9ad000 rw-p 00000000 00:00 0 
+4b9ad000-4ba00000 ---p 00000000 00:00 0 
+4ba00000-4ba69000 rw-p 00000000 00:00 0 
+4ba69000-4bb00000 ---p 00000000 00:00 0 
+4bb00000-4bbfe000 rw-p 00000000 00:00 0 
+4bbfe000-4bc00000 ---p 00000000 00:00 0 
+4bc00000-4bcfc000 rw-p 00000000 00:00 0 
+4bcfc000-4bd00000 ---p 00000000 00:00 0 
+4bd00000-4bd01000 r--s 00003000 b3:02 271158     /opt/openhab/server/plugins/org.w3c.dom.smil_1.0.0.v200806040011.jar
+4bd01000-4bd06000 r--s 00041000 b3:02 271212     /opt/openhab/server/plugins/org.eclipse.jetty.util_8.1.3.v20120522.jar
+4bd06000-4bd3e000 r-xp 00000000 b3:02 25184      /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+4bd3e000-4bd4e000 ---p 00038000 b3:02 25184      /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+4bd4e000-4bd4f000 r--p 00038000 b3:02 25184      /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+4bd4f000-4bd50000 rw-p 00039000 b3:02 25184      /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+4bd50000-4bdab000 r-xp 00000000 b3:02 25070      /usr/lib/arm-linux-gnueabihf/libcups.so.2
+4bdab000-4bdbb000 ---p 0005b000 b3:02 25070      /usr/lib/arm-linux-gnueabihf/libcups.so.2
+4bdbb000-4bdbf000 r--p 0005b000 b3:02 25070      /usr/lib/arm-linux-gnueabihf/libcups.so.2
+4bdbf000-4bdc0000 rw-p 0005f000 b3:02 25070      /usr/lib/arm-linux-gnueabihf/libcups.so.2
+4bdc0000-4bdc3000 ---p 00000000 00:00 0 
+4bdc3000-4bf60000 rwxp 00000000 00:00 0          [stack:6758]
+4bf60000-4bf63000 ---p 00000000 00:00 0 
+4bf63000-4c100000 rwxp 00000000 00:00 0          [stack:8161]
+4c100000-4c200000 rw-p 00000000 00:00 0 
+4c200000-4c24a000 rw-p 00000000 00:00 0 
+4c24a000-4c300000 ---p 00000000 00:00 0 
+4c300000-4c3eb000 rw-p 00000000 00:00 0 
+4c3eb000-4c400000 ---p 00000000 00:00 0 
+4c400000-4c402000 r--s 0001a000 b3:02 271211     /opt/openhab/server/plugins/org.eclipse.jetty.webapp_8.1.3.v20120522.jar
+4c409000-4c485000 r-xp 00000000 b3:02 272835     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libawt.so
+4c485000-4c494000 ---p 0007c000 b3:02 272835     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libawt.so
+4c494000-4c495000 r--p 0007b000 b3:02 272835     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libawt.so
+4c495000-4c49c000 rw-p 0007c000 b3:02 272835     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libawt.so
+4c49c000-4c4c0000 rw-p 00000000 00:00 0 
+4c4c0000-4c4c3000 ---p 00000000 00:00 0 
+4c4c3000-4c660000 rwxp 00000000 00:00 0          [stack:6739]
+4c660000-4c663000 ---p 00000000 00:00 0 
+4c663000-4c800000 rwxp 00000000 00:00 0          [stack:6738]
+4c800000-4c8ff000 rw-p 00000000 00:00 0 
+4c8ff000-4c900000 ---p 00000000 00:00 0 
+4c900000-4c901000 r--s 00002000 b3:02 271334     /opt/openhab/server/plugins/org.eclipse.equinox.p2.ql_2.0.100.v20110808-1657.jar
+4c909000-4c913000 r-xp 00000000 b3:02 25026      /usr/lib/arm-linux-gnueabihf/libavahi-common.so.3.5.3
+4c913000-4c922000 ---p 0000a000 b3:02 25026      /usr/lib/arm-linux-gnueabihf/libavahi-common.so.3.5.3
+4c922000-4c923000 r--p 00009000 b3:02 25026      /usr/lib/arm-linux-gnueabihf/libavahi-common.so.3.5.3
+4c923000-4c924000 rw-p 0000a000 b3:02 25026      /usr/lib/arm-linux-gnueabihf/libavahi-common.so.3.5.3
+4c924000-4c954000 r-xp 00000000 b3:02 25141      /usr/lib/arm-linux-gnueabihf/libfontconfig.so.1.8.0
+4c954000-4c955000 r--p 00030000 b3:02 25141      /usr/lib/arm-linux-gnueabihf/libfontconfig.so.1.8.0
+4c955000-4c956000 rw-p 00031000 b3:02 25141      /usr/lib/arm-linux-gnueabihf/libfontconfig.so.1.8.0
+4c956000-4c957000 r--s 00079000 b3:02 271175     /opt/openhab/server/plugins/org.openhab.io.transport.serial_1.8.1.jar
+4c96a000-4c96f000 r-xp 00000000 b3:02 272827     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/headless/libmawt.so
+4c96f000-4c97e000 ---p 00005000 b3:02 272827     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/headless/libmawt.so
+4c97e000-4c97f000 r--p 00004000 b3:02 272827     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/headless/libmawt.so
+4c97f000-4c980000 rw-p 00005000 b3:02 272827     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/headless/libmawt.so
+4c980000-4c983000 ---p 00000000 00:00 0 
+4c983000-4cb20000 rwxp 00000000 00:00 0          [stack:8157]
+4cb20000-4cb23000 ---p 00000000 00:00 0 
+4cb23000-4ccc0000 rwxp 00000000 00:00 0          [stack:6735]
+4ccc0000-4ccc3000 ---p 00000000 00:00 0 
+4ccc3000-4ce60000 rwxp 00000000 00:00 0          [stack:6734]
+4ce60000-4ce63000 ---p 00000000 00:00 0 
+4ce63000-4d000000 rwxp 00000000 00:00 0          [stack:6733]
+4d000000-4d100000 rw-p 00000000 00:00 0 
+4d100000-4d101000 r--s 00004000 b3:02 271221     /opt/openhab/server/plugins/org.eclipse.jetty.osgi.boot.warurl_8.1.3.qualifier.jar
+4d101000-4d104000 r--s 00014000 b3:02 271300     /opt/openhab/server/plugins/org.eclipse.ecf_3.1.300.v20120610-1946.jar
+4d104000-4d106000 r-xp 00000000 b3:02 3159       /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+4d106000-4d10d000 ---p 00002000 b3:02 3159       /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+4d10d000-4d10e000 r--p 00001000 b3:02 3159       /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+4d10e000-4d10f000 rw-p 00002000 b3:02 3159       /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+4d10f000-4d11a000 r--s 0020a000 b3:02 272864     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/charsets.jar
+4d12b000-4d146000 r--s 00100000 b3:02 271168     /opt/openhab/server/plugins/org.openhab.model.sitemap_1.8.1.jar
+4d146000-4d164000 r--s 00167000 b3:02 271243     /opt/openhab/server/plugins/com.google.guava_10.0.1.v201203051515.jar
+4d164000-4d167000 ---p 00000000 00:00 0 
+4d167000-4d304000 rwxp 00000000 00:00 0          [stack:8162]
+4d304000-4d307000 ---p 00000000 00:00 0 
+4d307000-4d4a4000 rwxp 00000000 00:00 0          [stack:8148]
+4d4a4000-4d4a7000 ---p 00000000 00:00 0 
+4d4a7000-4d644000 rwxp 00000000 00:00 0          [stack:6737]
+4d644000-4d647000 ---p 00000000 00:00 0 
+4d647000-4d7e4000 rwxp 00000000 00:00 0          [stack:6729]
+4d7e4000-4d7e7000 ---p 00000000 00:00 0 
+4d7e7000-4d984000 rwxp 00000000 00:00 0          [stack:7621]
+4d984000-4d987000 ---p 00000000 00:00 0 
+4d987000-4db24000 rwxp 00000000 00:00 0          [stack:6727]
+4db24000-4db27000 ---p 00000000 00:00 0 
+4db27000-4dcc4000 rwxp 00000000 00:00 0          [stack:6726]
+4dcc4000-4dcc7000 ---p 00000000 00:00 0 
+4dcc7000-4de64000 rwxp 00000000 00:00 0          [stack:8138]
+4de64000-4de67000 ---p 00000000 00:00 0 
+4de67000-4e004000 rwxp 00000000 00:00 0          [stack:6723]
+4e004000-4e007000 ---p 00000000 00:00 0 
+4e007000-4e1a4000 rwxp 00000000 00:00 0          [stack:6722]
+4e1a4000-4e1a7000 ---p 00000000 00:00 0 
+4e1a7000-4e344000 rwxp 00000000 00:00 0          [stack:6721]
+4e344000-4e347000 ---p 00000000 00:00 0 
+4e347000-4e4e4000 rwxp 00000000 00:00 0          [stack:6720]
+4e4e4000-4e4e7000 ---p 00000000 00:00 0 
+4e4e7000-4e684000 rwxp 00000000 00:00 0          [stack:6719]
+4e684000-4e6d7000 r-xp 00000000 b3:02 26268      /usr/lib/arm-linux-gnueabihf/nss/libfreebl3.so
+4e6d7000-4e6e6000 ---p 00053000 b3:02 26268      /usr/lib/arm-linux-gnueabihf/nss/libfreebl3.so
+4e6e6000-4e6e7000 r--p 00052000 b3:02 26268      /usr/lib/arm-linux-gnueabihf/nss/libfreebl3.so
+4e6e7000-4e6e8000 rw-p 00053000 b3:02 26268      /usr/lib/arm-linux-gnueabihf/nss/libfreebl3.so
+4e6e8000-4e6ec000 rw-p 00000000 00:00 0 
+4e6ec000-4e793000 r-xp 00000000 b3:02 25408      /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+4e793000-4e7a2000 ---p 000a7000 b3:02 25408      /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+4e7a2000-4e7a4000 r--p 000a6000 b3:02 25408      /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+4e7a4000-4e7a5000 rw-p 000a8000 b3:02 25408      /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+4e7a5000-4e7a6000 rw-p 00000000 00:00 0 
+4e7a6000-4e7d9000 r-xp 00000000 b3:02 26273      /usr/lib/arm-linux-gnueabihf/nss/libsoftokn3.so
+4e7d9000-4e7e9000 ---p 00033000 b3:02 26273      /usr/lib/arm-linux-gnueabihf/nss/libsoftokn3.so
+4e7e9000-4e7ea000 r--p 00033000 b3:02 26273      /usr/lib/arm-linux-gnueabihf/nss/libsoftokn3.so
+4e7ea000-4e7eb000 rw-p 00034000 b3:02 26273      /usr/lib/arm-linux-gnueabihf/nss/libsoftokn3.so
+4e7eb000-4e8eb000 r-xp 00000000 b3:02 25310      /usr/lib/arm-linux-gnueabihf/libnss3.so
+4e8eb000-4e8fa000 ---p 00100000 b3:02 25310      /usr/lib/arm-linux-gnueabihf/libnss3.so
+4e8fa000-4e8fd000 r--p 000ff000 b3:02 25310      /usr/lib/arm-linux-gnueabihf/libnss3.so
+4e8fd000-4e8ff000 rw-p 00102000 b3:02 25310      /usr/lib/arm-linux-gnueabihf/libnss3.so
+4e8ff000-4e900000 rw-p 00000000 00:00 0 
+4e900000-4e9e7000 rw-p 00000000 00:00 0 
+4e9e7000-4ea00000 ---p 00000000 00:00 0 
+4ea00000-4ea2d000 r-xp 00000000 b3:02 25309      /usr/lib/arm-linux-gnueabihf/libnspr4.so
+4ea2d000-4ea3c000 ---p 0002d000 b3:02 25309      /usr/lib/arm-linux-gnueabihf/libnspr4.so
+4ea3c000-4ea3d000 r--p 0002c000 b3:02 25309      /usr/lib/arm-linux-gnueabihf/libnspr4.so
+4ea3d000-4ea3e000 rw-p 0002d000 b3:02 25309      /usr/lib/arm-linux-gnueabihf/libnspr4.so
+4ea3e000-4ea40000 rw-p 00000000 00:00 0 
+4ea40000-4ea43000 ---p 00000000 00:00 0 
+4ea43000-4ebe0000 rwxp 00000000 00:00 0          [stack:6718]
+4ebe0000-4ebe3000 ---p 00000000 00:00 0 
+4ebe3000-4ed80000 rwxp 00000000 00:00 0          [stack:6717]
+4ed80000-4ed83000 ---p 00000000 00:00 0 
+4ed83000-4ef20000 rwxp 00000000 00:00 0          [stack:6716]
+4ef20000-4ef23000 ---p 00000000 00:00 0 
+4ef23000-4f0c0000 rwxp 00000000 00:00 0          [stack:6715]
+4f0c0000-4f0c3000 ---p 00000000 00:00 0 
+4f0c3000-4f260000 rwxp 00000000 00:00 0          [stack:6714]
+4f260000-4f263000 ---p 00000000 00:00 0 
+4f263000-4f400000 rwxp 00000000 00:00 0          [stack:6713]
+4f400000-4f403000 ---p 00000000 00:00 0 
+4f403000-4f5a0000 rwxp 00000000 00:00 0          [stack:6712]
+4f5a0000-4f5a3000 ---p 00000000 00:00 0 
+4f5a3000-4f740000 rwxp 00000000 00:00 0          [stack:6711]
+4f740000-4f743000 ---p 00000000 00:00 0 
+4f743000-4f8e0000 rwxp 00000000 00:00 0          [stack:6710]
+4f8e0000-4f8e3000 ---p 00000000 00:00 0 
+4f8e3000-4fa80000 rwxp 00000000 00:00 0          [stack:6709]
+4fa80000-4fa83000 ---p 00000000 00:00 0 
+4fa83000-4fc20000 rwxp 00000000 00:00 0          [stack:6707]
+4fc20000-4fc23000 ---p 00000000 00:00 0 
+4fc23000-4fdc0000 rwxp 00000000 00:00 0          [stack:6706]
+4fdc0000-4fdc3000 ---p 00000000 00:00 0 
+4fdc3000-4ff60000 rwxp 00000000 00:00 0          [stack:6704]
+4ff60000-4ff63000 ---p 00000000 00:00 0 
+4ff63000-50100000 rwxp 00000000 00:00 0          [stack:6708]
+50100000-501e3000 rw-p 00000000 00:00 0 
+501e3000-50200000 ---p 00000000 00:00 0 
+50200000-502fe000 rw-p 00000000 00:00 0 
+502fe000-50300000 ---p 00000000 00:00 0 
+50300000-50301000 r--s 00006000 b3:02 271239     /opt/openhab/server/plugins/javax.annotation_1.1.0.v201209060031.jar
+50301000-50307000 r--s 00049000 b3:02 271265     /opt/openhab/server/plugins/org.apache.commons.httpclient_3.1.0.v201012070820.jar
+50307000-5030b000 r-xp 00000000 b3:02 22744      /lib/arm-linux-gnueabihf/libnss_dns-2.19.so
+5030b000-5031a000 ---p 00004000 b3:02 22744      /lib/arm-linux-gnueabihf/libnss_dns-2.19.so
+5031a000-5031b000 r--p 00003000 b3:02 22744      /lib/arm-linux-gnueabihf/libnss_dns-2.19.so
+5031b000-5031c000 rw-p 00004000 b3:02 22744      /lib/arm-linux-gnueabihf/libnss_dns-2.19.so
+5031c000-5031e000 r-xp 00000000 b3:02 25351      /usr/lib/arm-linux-gnueabihf/libplds4.so
+5031e000-5032d000 ---p 00002000 b3:02 25351      /usr/lib/arm-linux-gnueabihf/libplds4.so
+5032d000-5032e000 r--p 00001000 b3:02 25351      /usr/lib/arm-linux-gnueabihf/libplds4.so
+5032e000-5032f000 rw-p 00002000 b3:02 25351      /usr/lib/arm-linux-gnueabihf/libplds4.so
+5032f000-50332000 r-xp 00000000 b3:02 25350      /usr/lib/arm-linux-gnueabihf/libplc4.so
+50332000-50341000 ---p 00003000 b3:02 25350      /usr/lib/arm-linux-gnueabihf/libplc4.so
+50341000-50342000 r--p 00002000 b3:02 25350      /usr/lib/arm-linux-gnueabihf/libplc4.so
+50342000-50343000 rw-p 00003000 b3:02 25350      /usr/lib/arm-linux-gnueabihf/libplc4.so
+50343000-5035f000 r-xp 00000000 b3:02 25311      /usr/lib/arm-linux-gnueabihf/libnssutil3.so
+5035f000-5036f000 ---p 0001c000 b3:02 25311      /usr/lib/arm-linux-gnueabihf/libnssutil3.so
+5036f000-50372000 r--p 0001c000 b3:02 25311      /usr/lib/arm-linux-gnueabihf/libnssutil3.so
+50372000-50373000 rw-p 0001f000 b3:02 25311      /usr/lib/arm-linux-gnueabihf/libnssutil3.so
+50373000-50375000 r--s 00006000 b3:02 271223     /opt/openhab/server/plugins/org.eclipse.jetty.jmx_8.1.3.v20120522.jar
+50387000-50396000 r-xp 00000000 b3:02 272844     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libj2pkcs11.so
+50396000-503a5000 ---p 0000f000 b3:02 272844     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libj2pkcs11.so
+503a5000-503a6000 r--p 0000e000 b3:02 272844     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libj2pkcs11.so
+503a6000-503a7000 rw-p 0000f000 b3:02 272844     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libj2pkcs11.so
+503bf000-503ec000 r--s 001dc000 b3:02 271192     /opt/openhab/server/plugins/org.eclipse.xtext_2.3.0.v201206120633.jar
+503ec000-503f3000 r--s 00048000 b3:02 271237     /opt/openhab/server/plugins/javax.mail_1.4.0.v201005080615.jar
+503f8000-503f9000 r--s 00003000 b3:02 271196     /opt/openhab/server/plugins/org.eclipse.xtext.smap_2.3.0.v201206120633.jar
+50400000-504f9000 rw-p 00000000 00:00 0 
+504f9000-50500000 ---p 00000000 00:00 0 
+50500000-50501000 r--s 00004000 b3:02 271205     /opt/openhab/server/plugins/org.eclipse.swt_3.100.1.v4236b.jar
+50501000-50510000 r--s 0007f000 b3:02 517047     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/190/1/.cp/lib/joda-time-2.3.jar
+50510000-50512000 r--s 0000f000 b3:02 271226     /opt/openhab/server/plugins/org.eclipse.jetty.deploy_8.1.3.v20120522.jar
+5052d000-5052f000 r--s 00008000 b3:02 271233     /opt/openhab/server/plugins/javax.xml.stream_1.0.1.v201004272200.jar
+5052f000-50531000 r-xp 00000000 b3:02 3179       /lib/arm-linux-gnueabihf/libnss_mdns4_minimal.so.2
+50531000-50538000 ---p 00002000 b3:02 3179       /lib/arm-linux-gnueabihf/libnss_mdns4_minimal.so.2
+50538000-50539000 r--p 00001000 b3:02 3179       /lib/arm-linux-gnueabihf/libnss_mdns4_minimal.so.2
+50539000-5053a000 rw-p 00002000 b3:02 3179       /lib/arm-linux-gnueabihf/libnss_mdns4_minimal.so.2
+5053e000-50542000 r--s 00031000 b3:02 271231     /opt/openhab/server/plugins/org.antlr.runtime_3.2.0.v201101311130.jar
+50542000-50544000 r--s 00002000 b3:02 271299     /opt/openhab/server/plugins/org.eclipse.ecf.ssl_1.0.100.v20120610-1946.jar
+50544000-50546000 r--s 00002000 b3:02 271312     /opt/openhab/server/plugins/org.eclipse.emf.mwe2.runtime_2.3.0.v201206110920.jar
+50557000-50563000 r--s 00074000 b3:02 271242     /opt/openhab/server/plugins/com.google.inject_3.0.0.v201203062045.jar
+50571000-50577000 r--s 0004f000 b3:02 271215     /opt/openhab/server/plugins/org.eclipse.jetty.server_8.1.3.v20120522.jar
+50585000-50597000 r--s 00105000 b3:02 271306     /opt/openhab/server/plugins/org.eclipse.emf.ecore_2.8.3.v20130125-0546.jar
+50597000-505a4000 r--s 000af000 b3:02 517103     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/atmosphere-runtime-2.2.5.jar
+505a4000-505a6000 r--s 00097000 b3:02 517294     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/224/1/bundlefile
+505a8000-505ac000 r--s 0002e000 b3:02 271236     /opt/openhab/server/plugins/javax.servlet_3.0.0.v201112011016.jar
+505ac000-505ae000 r--s 00006000 b3:02 517128     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/222/1/bundlefile
+505b0000-505b1000 r--s 00002000 b3:02 271297     /opt/openhab/server/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.0.v20120610-1946.jar
+505ba000-505bb000 r--s 00002000 b3:02 271244     /opt/openhab/server/plugins/ch.qos.logback.slf4j_1.0.7.v20121108-1250.jar
+505be000-505bf000 r--s 00008000 b3:02 271321     /opt/openhab/server/plugins/org.eclipse.equinox.frameworkadmin_2.0.100.v20120913-155515.jar
+505c7000-505c9000 r--s 00008000 b3:02 517104     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/atmosphere-annotations-2.2.5.jar
+505cf000-505d2000 ---p 00000000 00:00 0 
+505d2000-5076f000 rwxp 00000000 00:00 0          [stack:6701]
+5076f000-50772000 ---p 00000000 00:00 0 
+50772000-5090f000 rwxp 00000000 00:00 0          [stack:6699]
+5090f000-50912000 ---p 00000000 00:00 0 
+50912000-50aaf000 rwxp 00000000 00:00 0          [stack:6698]
+50aaf000-50ab2000 ---p 00000000 00:00 0 
+50ab2000-50c4f000 rwxp 00000000 00:00 0          [stack:6744]
+50c4f000-50c52000 ---p 00000000 00:00 0 
+50c52000-50def000 rwxp 00000000 00:00 0          [stack:6695]
+50def000-50fb0000 rw-p 00000000 00:00 0 
+50fb0000-510a2000 r-xp 00000000 b3:02 3151       /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4200.1
+510a2000-510b1000 ---p 000f2000 b3:02 3151       /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4200.1
+510b1000-510b2000 r--p 000f1000 b3:02 3151       /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4200.1
+510b2000-510b3000 rw-p 000f2000 b3:02 3151       /lib/arm-linux-gnueabihf/libglib-2.0.so.0.4200.1
+510b3000-511eb000 r-xp 00000000 b3:02 25165      /usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.4200.1
+511eb000-511fb000 ---p 00138000 b3:02 25165      /usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.4200.1
+511fb000-511fd000 r--p 00138000 b3:02 25165      /usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.4200.1
+511fd000-511ff000 rw-p 0013a000 b3:02 25165      /usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.4200.1
+511ff000-51200000 rw-p 00000000 00:00 0 
+51200000-512eb000 rw-p 00000000 00:00 0 
+512eb000-51300000 ---p 00000000 00:00 0 
+51300000-513fe000 rw-p 00000000 00:00 0 
+513fe000-51400000 ---p 00000000 00:00 0 
+51400000-514ff000 rw-p 00000000 00:00 0 
+514ff000-51500000 ---p 00000000 00:00 0 
+51500000-51600000 rw-p 00000000 00:00 0 
+51600000-516fc000 rw-p 00000000 00:00 0 
+516fc000-51700000 ---p 00000000 00:00 0 
+51700000-51702000 r--s 00007000 b3:02 271163     /opt/openhab/server/plugins/org.slf4j.api_1.7.2.v20121108-1250.jar
+51702000-51703000 r--s 0000a000 b3:02 271209     /opt/openhab/server/plugins/org.eclipse.jetty.xml_8.1.3.v20120522.jar
+51709000-5170e000 r--s 0003b000 b3:02 271246     /opt/openhab/server/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar
+5170e000-5171f000 r--s 00097000 b3:02 517099     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jersey-server-1.18.1.jar
+5171f000-5172d000 r--s 000ad000 b3:02 517092     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jackson-mapper-asl-1.9.2.jar
+5172d000-51731000 r--s 0002f000 b3:02 517064     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/200/1/.cp/lib/jmdns-3.4.1.jar
+51731000-51732000 r--s 0000b000 b3:02 271260     /opt/openhab/server/plugins/org.apache.commons.cli_1.2.0.v201105210650.jar
+51732000-51734000 r--s 00001000 b3:02 271190     /opt/openhab/server/plugins/org.openhab.core.autoupdate_1.8.1.jar
+51734000-51736000 r--s 00009000 b3:02 271189     /opt/openhab/server/plugins/org.openhab.core.library_1.8.1.jar
+51736000-5173b000 r--s 00045000 b3:02 271267     /opt/openhab/server/plugins/org.apache.commons.lang_2.6.0.v201205030909.jar
+5173b000-51744000 r--s 00085000 b3:02 513607     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/191/1/.cp/lib/quartz-all-2.1.7.jar
+51745000-51747000 r--s 0001f000 b3:02 271166     /opt/openhab/server/plugins/org.openhab.ui_1.8.1.jar
+51749000-5174e000 r--s 0003b000 b3:02 271167     /opt/openhab/server/plugins/org.openhab.ui.webapp_1.8.1.jar
+5174e000-51750000 r--s 00017000 b3:02 271225     /opt/openhab/server/plugins/org.eclipse.jetty.http_8.1.3.v20120522.jar
+51750000-51753000 r--s 00019000 b3:02 271224     /opt/openhab/server/plugins/org.eclipse.jetty.io_8.1.3.v20120522.jar
+51753000-51755000 r--s 0000f000 b3:02 517110     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jettison-1.1.jar
+51755000-51757000 r--s 0007d000 b3:02 271188     /opt/openhab/server/plugins/org.openhab.core.persistence_1.8.1.jar
+51757000-51760000 r--s 000ad000 b3:02 272886     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/resources.jar
+51760000-51763000 ---p 00000000 00:00 0 
+51763000-51900000 rwxp 00000000 00:00 0          [stack:6693]
+51900000-51a00000 rw-p 00000000 00:00 0 
+51a00000-51a02000 r--s 00000000 b3:02 271182     /opt/openhab/server/plugins/org.openhab.io.monitor_1.8.1.jar
+51a02000-51a06000 r--s 0001d000 b3:02 517109     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jersey-client-1.18.1.jar
+51a06000-51a08000 r--s 0000c000 b3:02 517105     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/atmosphere-jersey-2.2.5.jar
+51a08000-51a16000 r-xp 00000000 b3:02 272859     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnio.so
+51a16000-51a25000 ---p 0000e000 b3:02 272859     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnio.so
+51a25000-51a26000 r--p 0000d000 b3:02 272859     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnio.so
+51a26000-51a27000 rw-p 0000e000 b3:02 272859     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnio.so
+51a27000-51a89000 r-xp 00000000 b3:02 3191       /lib/arm-linux-gnueabihf/libpcre.so.3.13.1
+51a89000-51a98000 ---p 00062000 b3:02 3191       /lib/arm-linux-gnueabihf/libpcre.so.3.13.1
+51a98000-51a99000 r--p 00061000 b3:02 3191       /lib/arm-linux-gnueabihf/libpcre.so.3.13.1
+51a99000-51a9a000 rw-p 00062000 b3:02 3191       /lib/arm-linux-gnueabihf/libpcre.so.3.13.1
+51a9a000-51aa0000 r-xp 00000000 b3:02 25120      /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2
+51aa0000-51aa8000 ---p 00006000 b3:02 25120      /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2
+51aa8000-51aa9000 r--p 00006000 b3:02 25120      /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2
+51aa9000-51aaa000 rw-p 00007000 b3:02 25120      /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2
+51aaa000-51ac5000 r-xp 00000000 b3:02 3203       /lib/arm-linux-gnueabihf/libselinux.so.1
+51ac5000-51ad4000 ---p 0001b000 b3:02 3203       /lib/arm-linux-gnueabihf/libselinux.so.1
+51ad4000-51ad5000 r--p 0001a000 b3:02 3203       /lib/arm-linux-gnueabihf/libselinux.so.1
+51ad5000-51ad6000 rw-p 0001b000 b3:02 3203       /lib/arm-linux-gnueabihf/libselinux.so.1
+51ad6000-51ad7000 rw-p 00000000 00:00 0 
+51ad7000-51ada000 ---p 00000000 00:00 0 
+51ada000-51c77000 rwxp 00000000 00:00 0          [stack:6692]
+51c77000-51e00000 r--p 00000000 b3:02 155890     /usr/lib/locale/locale-archive
+51e00000-51e29000 rw-p 00000000 00:00 0 
+51e29000-51f00000 ---p 00000000 00:00 0 
+51f01000-51f02000 r--s 00002000 b3:02 271186     /opt/openhab/server/plugins/org.openhab.core.scriptengine_1.8.1.jar
+51f02000-51f06000 r--s 0001c000 b3:02 517100     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jersey-servlet-1.18.1.jar
+51f06000-51f4f000 r-xp 00000000 b3:02 25174      /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4200.1
+51f4f000-51f5e000 ---p 00049000 b3:02 25174      /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4200.1
+51f5e000-51f5f000 r--p 00048000 b3:02 25174      /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4200.1
+51f5f000-51f60000 rw-p 00049000 b3:02 25174      /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.4200.1
+51f60000-51f63000 ---p 00000000 00:00 0 
+51f63000-52100000 rwxp 00000000 00:00 0          [stack:6691]
+52100000-52200000 rw-p 00000000 00:00 0 
+52200000-52212000 r-xp 00000000 b3:02 22750      /lib/arm-linux-gnueabihf/libresolv-2.19.so
+52212000-52221000 ---p 00012000 b3:02 22750      /lib/arm-linux-gnueabihf/libresolv-2.19.so
+52221000-52222000 r--p 00011000 b3:02 22750      /lib/arm-linux-gnueabihf/libresolv-2.19.so
+52222000-52223000 rw-p 00012000 b3:02 22750      /lib/arm-linux-gnueabihf/libresolv-2.19.so
+52223000-52225000 rw-p 00000000 00:00 0 
+52225000-52228000 r-xp 00000000 b3:02 25168      /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1
+52228000-52237000 ---p 00003000 b3:02 25168      /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1
+52237000-52238000 r--p 00002000 b3:02 25168      /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1
+52238000-52239000 rw-p 00003000 b3:02 25168      /usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1
+52239000-5224f000 r-xp 00000000 b3:02 272858     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnet.so
+5224f000-5225e000 ---p 00016000 b3:02 272858     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnet.so
+5225e000-5225f000 r--p 00015000 b3:02 272858     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnet.so
+5225f000-52260000 rw-p 00016000 b3:02 272858     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libnet.so
+52260000-52263000 ---p 00000000 00:00 0 
+52263000-52400000 rwxp 00000000 00:00 0          [stack:6690]
+52400000-524fa000 rw-p 00000000 00:00 0 
+524fa000-52500000 ---p 00000000 00:00 0 
+52501000-52503000 r--s 0000a000 b3:02 517101     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jsr311-api-1.1.1.jar
+52503000-52507000 r--s 00025000 b3:02 517098     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jersey-json-1.18.1.jar
+52507000-52508000 ---p 00000000 00:00 0 
+52508000-52587000 rwxp 00000000 00:00 0          [stack:6694]
+52587000-52588000 ---p 00000000 00:00 0 
+52588000-52607000 rwxp 00000000 00:00 0          [stack:6689]
+52607000-52650000 rw-p 00000000 00:00 0 
+52650000-52801000 r--s 01ceb000 b3:02 272813     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/rt.jar
+52801000-5286a000 rw-p 00000000 00:00 0 
+5286a000-528f7000 rw-p 00000000 00:00 0 
+528f7000-528fe000 rw-p 00000000 00:00 0 
+528fe000-52944000 rw-p 00000000 00:00 0 
+52944000-52952000 rw-p 00000000 00:00 0 
+52952000-529df000 rw-p 00000000 00:00 0 
+529df000-529ee000 rw-p 00000000 00:00 0 
+529ee000-529ff000 rw-p 00000000 00:00 0 
+529ff000-537a0000 rw-p 00000000 00:00 0 
+537a0000-5c4a0000 rw-p 00000000 00:00 0 
+5c4a0000-5dfa3000 rw-p 00000000 00:00 0 
+5dfa3000-6fa00000 rw-p 00000000 00:00 0 
+6fa00000-71800000 rw-p 00000000 00:00 0 
+71800000-73a00000 rw-p 00000000 00:00 0 
+73a00000-73a01000 r--s 00084000 b3:02 271187     /opt/openhab/server/plugins/org.openhab.core.scheduler_1.8.1.jar
+73a01000-73a0c000 r--s 0006b000 b3:02 517097     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jersey-core-1.18.1.jar
+73a0c000-73a11000 r--s 00094000 b3:02 526989     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/224/1/.cp/lib/rrd4j-2.1.1.jar
+73a11000-73a12000 r--s 00004000 b3:02 517362     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/225/1/bundlefile
+73a12000-73a13000 r--p 00000000 b3:02 25630      /usr/share/locale/en_GB/LC_MESSAGES/libc.mo
+73a13000-73a17000 r--s 00034000 b3:02 517090     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jackson-core-asl-1.9.2.jar
+73a17000-73a2b000 r--s 00142000 b3:02 271206     /opt/openhab/server/plugins/org.eclipse.osgi_3.8.2.v20130124-134944.jar
+73a2b000-73a3b000 rw-p 00000000 00:00 0 
+73a3b000-73a4c000 rw-p 00000000 00:00 0 
+73a4c000-73a4d000 rw-p 00000000 00:00 0 
+73a4d000-73acc000 rw-p 00000000 00:00 0 
+73acc000-73af4000 rwxp 00000000 00:00 0 
+73af4000-75acc000 rw-p 00000000 00:00 0 
+75acc000-75ad3000 r-xp 00000000 b3:02 272863     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libzip.so
+75ad3000-75ae2000 ---p 00007000 b3:02 272863     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libzip.so
+75ae2000-75ae3000 r--p 00006000 b3:02 272863     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libzip.so
+75ae3000-75ae4000 rw-p 00007000 b3:02 272863     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libzip.so
+75ae4000-75aef000 r-xp 00000000 b3:02 22745      /lib/arm-linux-gnueabihf/libnss_files-2.19.so
+75aef000-75afe000 ---p 0000b000 b3:02 22745      /lib/arm-linux-gnueabihf/libnss_files-2.19.so
+75afe000-75aff000 r--p 0000a000 b3:02 22745      /lib/arm-linux-gnueabihf/libnss_files-2.19.so
+75aff000-75b00000 rw-p 0000b000 b3:02 22745      /lib/arm-linux-gnueabihf/libnss_files-2.19.so
+75b00000-75bfc000 rw-p 00000000 00:00 0 
+75bfc000-75c00000 ---p 00000000 00:00 0 
+75c00000-75c01000 r--s 0000a000 b3:02 517096     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/asm-3.1.jar
+75c01000-75c02000 r--s 00006000 b3:02 271227     /opt/openhab/server/plugins/org.eclipse.jetty.continuation_8.1.3.v20120522.jar
+75c02000-75c03000 r--s 00006000 b3:02 517094     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jackson-xc-1.9.2.jar
+75c03000-75c04000 r--s 00004000 b3:02 517091     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/199/1/.cp/lib/jackson-jaxrs-1.9.2.jar
+75c04000-75c06000 r--s 00009000 b3:02 271184     /opt/openhab/server/plugins/org.openhab.core_1.8.1.jar
+75c06000-75c07000 r--s 00002000 b3:02 517119     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/221/1/bundlefile
+75c07000-75c08000 r--s 00001000 b3:02 517281     /opt/openhab/server/configuration/org.eclipse.osgi/bundles/223/1/bundlefile
+75c08000-75c0a000 r--s 00006000 b3:02 271235     /opt/openhab/server/plugins/javax.transaction_1.1.1.v201105210645.jar
+75c0a000-75c0d000 r--s 00017000 b3:02 272882     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jce.jar
+75c0d000-75c11000 r--s 0004e000 b3:02 272883     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jsse.jar
+75c11000-75c1a000 r-xp 00000000 b3:02 22747      /lib/arm-linux-gnueabihf/libnss_nis-2.19.so
+75c1a000-75c29000 ---p 00009000 b3:02 22747      /lib/arm-linux-gnueabihf/libnss_nis-2.19.so
+75c29000-75c2a000 r--p 00008000 b3:02 22747      /lib/arm-linux-gnueabihf/libnss_nis-2.19.so
+75c2a000-75c2b000 rw-p 00009000 b3:02 22747      /lib/arm-linux-gnueabihf/libnss_nis-2.19.so
+75c2b000-75c3c000 r-xp 00000000 b3:02 22742      /lib/arm-linux-gnueabihf/libnsl-2.19.so
+75c3c000-75c4b000 ---p 00011000 b3:02 22742      /lib/arm-linux-gnueabihf/libnsl-2.19.so
+75c4b000-75c4c000 r--p 00010000 b3:02 22742      /lib/arm-linux-gnueabihf/libnsl-2.19.so
+75c4c000-75c4d000 rw-p 00011000 b3:02 22742      /lib/arm-linux-gnueabihf/libnsl-2.19.so
+75c4d000-75c4f000 rw-p 00000000 00:00 0 
+75c4f000-75c56000 r-xp 00000000 b3:02 22743      /lib/arm-linux-gnueabihf/libnss_compat-2.19.so
+75c56000-75c65000 ---p 00007000 b3:02 22743      /lib/arm-linux-gnueabihf/libnss_compat-2.19.so
+75c65000-75c66000 r--p 00006000 b3:02 22743      /lib/arm-linux-gnueabihf/libnss_compat-2.19.so
+75c66000-75c67000 rw-p 00007000 b3:02 22743      /lib/arm-linux-gnueabihf/libnss_compat-2.19.so
+75c67000-75c8a000 r-xp 00000000 b3:02 272846     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libjava.so
+75c8a000-75c99000 ---p 00023000 b3:02 272846     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libjava.so
+75c99000-75c9a000 r--p 00022000 b3:02 272846     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libjava.so
+75c9a000-75c9b000 rw-p 00023000 b3:02 272846     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libjava.so
+75c9b000-75ca7000 r-xp 00000000 b3:02 272862     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libverify.so
+75ca7000-75cb7000 ---p 0000c000 b3:02 272862     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libverify.so
+75cb7000-75cb8000 r--p 0000c000 b3:02 272862     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libverify.so
+75cb8000-75cb9000 rw-p 0000d000 b3:02 272862     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/libverify.so
+75cb9000-75cbf000 r-xp 00000000 b3:02 22751      /lib/arm-linux-gnueabihf/librt-2.19.so
+75cbf000-75cce000 ---p 00006000 b3:02 22751      /lib/arm-linux-gnueabihf/librt-2.19.so
+75cce000-75ccf000 r--p 00005000 b3:02 22751      /lib/arm-linux-gnueabihf/librt-2.19.so
+75ccf000-75cd0000 rw-p 00006000 b3:02 22751      /lib/arm-linux-gnueabihf/librt-2.19.so
+75cd0000-75cd4000 ---p 00000000 00:00 0 
+75cd4000-76670000 rwxp 00000000 00:00 0          [stack:6688]
+76670000-7668d000 r-xp 00000000 b3:02 3149       /lib/arm-linux-gnueabihf/libgcc_s.so.1
+7668d000-7669c000 ---p 0001d000 b3:02 3149       /lib/arm-linux-gnueabihf/libgcc_s.so.1
+7669c000-7669d000 rw-p 0001c000 b3:02 3149       /lib/arm-linux-gnueabihf/libgcc_s.so.1
+7669d000-76706000 r-xp 00000000 b3:02 22719      /lib/arm-linux-gnueabihf/libm-2.19.so
+76706000-76716000 ---p 00069000 b3:02 22719      /lib/arm-linux-gnueabihf/libm-2.19.so
+76716000-76717000 r--p 00069000 b3:02 22719      /lib/arm-linux-gnueabihf/libm-2.19.so
+76717000-76718000 rw-p 0006a000 b3:02 22719      /lib/arm-linux-gnueabihf/libm-2.19.so
+76718000-767d9000 r-xp 00000000 b3:02 25415      /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20
+767d9000-767e8000 ---p 000c1000 b3:02 25415      /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20
+767e8000-767ec000 r--p 000c0000 b3:02 25415      /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20
+767ec000-767ee000 rw-p 000c4000 b3:02 25415      /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20
+767ee000-767f4000 rw-p 00000000 00:00 0 
+767f4000-76c83000 r-xp 00000000 b3:02 272833     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/server/libjvm.so
+76c83000-76c93000 ---p 0048f000 b3:02 272833     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/server/libjvm.so
+76c93000-76ca2000 r--p 0048f000 b3:02 272833     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/server/libjvm.so
+76ca2000-76cb3000 rw-p 0049e000 b3:02 272833     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/server/libjvm.so
+76cb3000-76d0f000 rw-p 00000000 00:00 0 
+76d0f000-76d25000 r-xp 00000000 b3:02 3221       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76d25000-76d34000 ---p 00016000 b3:02 3221       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76d34000-76d35000 r--p 00015000 b3:02 3221       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76d35000-76d36000 rw-p 00016000 b3:02 3221       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76d36000-76e61000 r-xp 00000000 b3:02 22711      /lib/arm-linux-gnueabihf/libc-2.19.so
+76e61000-76e71000 ---p 0012b000 b3:02 22711      /lib/arm-linux-gnueabihf/libc-2.19.so
+76e71000-76e73000 r--p 0012b000 b3:02 22711      /lib/arm-linux-gnueabihf/libc-2.19.so
+76e73000-76e74000 rw-p 0012d000 b3:02 22711      /lib/arm-linux-gnueabihf/libc-2.19.so
+76e74000-76e77000 rw-p 00000000 00:00 0 
+76e77000-76e79000 r-xp 00000000 b3:02 22716      /lib/arm-linux-gnueabihf/libdl-2.19.so
+76e79000-76e88000 ---p 00002000 b3:02 22716      /lib/arm-linux-gnueabihf/libdl-2.19.so
+76e88000-76e89000 r--p 00001000 b3:02 22716      /lib/arm-linux-gnueabihf/libdl-2.19.so
+76e89000-76e8a000 rw-p 00002000 b3:02 22716      /lib/arm-linux-gnueabihf/libdl-2.19.so
+76e8a000-76e96000 r-xp 00000000 b3:02 272829     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/jli/libjli.so
+76e96000-76ea6000 ---p 0000c000 b3:02 272829     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/jli/libjli.so
+76ea6000-76ea7000 r--p 0000c000 b3:02 272829     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/jli/libjli.so
+76ea7000-76ea8000 rw-p 0000d000 b3:02 272829     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/jli/libjli.so
+76ea8000-76ebc000 r-xp 00000000 b3:02 22755      /lib/arm-linux-gnueabihf/libpthread-2.19.so
+76ebc000-76ecc000 ---p 00014000 b3:02 22755      /lib/arm-linux-gnueabihf/libpthread-2.19.so
+76ecc000-76ecd000 r--p 00014000 b3:02 22755      /lib/arm-linux-gnueabihf/libpthread-2.19.so
+76ecd000-76ece000 rw-p 00015000 b3:02 22755      /lib/arm-linux-gnueabihf/libpthread-2.19.so
+76ece000-76ed0000 rw-p 00000000 00:00 0 
+76ed0000-76ed2000 r--s 0000b000 b3:02 271324     /opt/openhab/server/plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+76ed2000-76ed5000 r--s 0000f000 b3:02 272824     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/icedtea-sound.jar
+76ed5000-76ed7000 r--s 00006000 b3:02 96665      /usr/share/java/java-atk-wrapper.jar
+76ed7000-76edb000 r--s 00033000 b3:02 272822     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/sunjce_provider.jar
+76edb000-76edc000 r--s 00002000 b3:02 272820     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/dnsns.jar
+76edc000-76edd000 r--s 00012000 b3:02 272823     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/zipfs.jar
+76edd000-76ee0000 r--s 00087000 b3:02 272821     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/localedata.jar
+76ee0000-76ee4000 r--s 0003c000 b3:02 272819     /usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext/sunpkcs11.jar
+76ee4000-76ee9000 r-xp 00000000 b3:02 25010      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ee9000-76ef8000 ---p 00005000 b3:02 25010      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ef8000-76ef9000 rw-p 00004000 b3:02 25010      /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ef9000-76f19000 r-xp 00000000 b3:02 22666      /lib/arm-linux-gnueabihf/ld-2.19.so
+76f19000-76f21000 rw-s 00000000 b3:02 517043     /tmp/hsperfdata_root/6687
+76f21000-76f22000 rw-p 00000000 00:00 0 
+76f22000-76f23000 ---p 00000000 00:00 0 
+76f23000-76f28000 rw-p 00000000 00:00 0 
+76f28000-76f29000 r--p 0001f000 b3:02 22666      /lib/arm-linux-gnueabihf/ld-2.19.so
+76f29000-76f2a000 rw-p 00020000 b3:02 22666      /lib/arm-linux-gnueabihf/ld-2.19.so
+7ebae000-7ebcf000 rwxp 00000000 00:00 0          [stack]
+7ee11000-7ee12000 r-xp 00000000 00:00 0          [sigpage]
+7ee12000-7ee13000 r--p 00000000 00:00 0          [vvar]
+7ee13000-7ee14000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+
+VM Arguments:
+jvm_args: -Dosgi.clean=true -Declipse.ignoreApp=true -Dosgi.noShutdown=true -Djetty.port=8082 -Djetty.port.ssl=8443 -Djetty.home=. -Dlogback.configurationFile=configurations/logback.xml -Dfelix.fileinstall.dir=addons -Dfelix.fileinstall.filter=.*\.jar -Djava.library.path=lib -Djava.security.auth.login.config=./etc/login.conf -Dorg.quartz.properties=./etc/quartz.properties -Dequinox.ds.block_timeout=240000 -Dequinox.scr.waitTimeOnBlock=60000 -Dfelix.fileinstall.active.level=4 -Djava.awt.headless=true 
+java_command: server/plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar -console
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+USERNAME=root
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x439688], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x439688], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x362fdc], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGXFSZ: [libjvm.so+0x362fdc], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x362fdc], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x362e54], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x36305c], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x36305c], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x36305c], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x36305c], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTRAP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:8.0
+
+uname:Linux 4.1.18-v7+ #846 SMP Thu Feb 25 14:22:53 GMT 2016 armv7l
+libc:glibc 2.19 NPTL 2.19 
+rlimit: STACK 8192k, CORE 0k, NPROC 7339, NOFILE 65536, AS infinity
+load average:0.17 0.20 0.16
+
+/proc/meminfo:
+MemTotal:         948060 kB
+MemFree:           13056 kB
+MemAvailable:     212724 kB
+Buffers:           23504 kB
+Cached:           219968 kB
+SwapCached:            0 kB
+Active:           473180 kB
+Inactive:         406528 kB
+Active(anon):     336272 kB
+Inactive(anon):   335880 kB
+Active(file):     136908 kB
+Inactive(file):    70648 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        102396 kB
+SwapFree:         102396 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        636580 kB
+Mapped:           123900 kB
+Shmem:             35628 kB
+Slab:              35308 kB
+SReclaimable:      22832 kB
+SUnreclaim:        12476 kB
+KernelStack:        3160 kB
+PageTables:         5928 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      576424 kB
+Committed_AS:    1663324 kB
+VmallocTotal:    1105920 kB
+VmallocUsed:        4964 kB
+VmallocChunk:     876556 kB
+CmaTotal:           8192 kB
+CmaFree:               4 kB
+
+
+CPU:total 4 
+
+/proc/cpuinfo:
+processor	: 0
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 57.60
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 1
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 57.60
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 2
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 57.60
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 3
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 57.60
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+Hardware	: BCM2709
+Revision	: a21041
+Serial		: 000000007097105d
+
+
+Memory: 4k page, physical 948060k(13056k free), swap 102396k(102396k free)
+
+vm_info: OpenJDK Zero VM (24.95-b01) for linux-arm-vfp JRE (1.7.0_95-b00), built on Jan 28 2016 19:18:42 by "autoforwardporter" with gcc 4.9.2
+
+time: Fri Mar 25 23:03:09 2016
+elapsed time: 10137 seconds
+
