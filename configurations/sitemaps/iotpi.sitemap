@@ -1,9 +1,10 @@
 sitemap demo label="Main Menu"  
 {  
 	Frame label="Lights" {
-		Switch         item=Toggle_1                                label="IoT Lab Door Light"
-		Colorpicker    item=Color_1    visibility=[Toggle_1==ON]    label="IoT Lab Door Light"
-                Switch         item=Toggle_2                                label="IoT Lab Window Light"
-                Colorpicker    item=Color_2    visibility=[Toggle_2==ON]    label="IoT Lab Window Light"
+		Switch         item=iot_hue_switch1                         label="IoT Lab Door Light"
+		Colorpicker    item=iot_hue_color1    visibility=[iot_hue_switch1==ON]    label="IoT Lab Door Light"
+                Switch item=iot_insteon_switch label="IoT Insteon Switch"  
+                Slider item=iot_insteon_dimmer "IoT Insteon Dimmer" 
+                Switch item=iot_insteon_dimmer_fastonoff          
 	}  
 }

@@ -1,685 +1,306 @@
-2016-03-28 23:12:59.472 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:12:59.504 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:13:14.513 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:13:14.515 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:13:29.525 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:13:29.527 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:13:44.535 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:13:44.542 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:13:59.551 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:13:59.554 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:14:10.856 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:14:10.858 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:14:23.862 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:14:23.864 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:14:36.870 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:14:36.872 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:14:49.872 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:14:49.874 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:15:02.892 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:15:02.894 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:15:15.892 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:15:15.894 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:15:28.892 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:15:28.894 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:15:41.902 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:15:41.904 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:15:54.902 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:15:54.903 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:16:07.902 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:16:07.903 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:16:20.910 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:16:20.912 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:16:33.917 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:16:33.919 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:16:46.930 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:16:46.932 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:16:59.940 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:16:59.942 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:17:12.946 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:17:12.948 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:17:25.969 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:17:25.972 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:17:38.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:17:38.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:17:51.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:17:51.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:18:04.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:18:04.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:18:17.976 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:18:17.978 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:18:30.982 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:18:30.996 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:18:44.002 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:18:44.004 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:18:57.009 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:18:57.011 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:19:10.012 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:19:10.020 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:19:23.025 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:19:23.027 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:19:36.031 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:19:36.033 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:19:49.032 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:19:49.040 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:20:02.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:20:02.044 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:20:15.050 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:20:15.052 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:20:28.052 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:20:28.060 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:20:41.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:20:41.063 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:20:54.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:20:54.063 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:21:07.081 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:21:07.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:21:20.082 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:21:20.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:21:33.090 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:21:33.091 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:21:46.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:21:46.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:21:59.110 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:21:59.112 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:22:12.120 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:22:12.122 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:22:25.122 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:22:25.123 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:22:38.122 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:22:38.123 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:22:51.122 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:22:51.124 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:23:04.122 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:23:04.124 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:23:17.122 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:23:17.124 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:23:30.130 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:23:30.132 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:23:43.140 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:23:43.141 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:23:56.142 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:23:56.144 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:24:09.150 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:24:09.152 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:24:22.160 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:24:22.161 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:24:35.165 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:24:35.167 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:24:48.172 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:24:48.173 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:25:01.179 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:25:01.181 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:25:14.190 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:25:14.192 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:25:27.192 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:25:27.193 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:25:40.191 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:25:40.193 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:25:53.192 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:25:53.193 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:26:06.196 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:26:06.197 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:26:19.202 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:26:19.204 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:26:32.202 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:26:32.210 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:26:45.212 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:26:45.220 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:26:58.222 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:26:58.224 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:27:11.230 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:27:11.232 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:27:24.240 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:27:24.242 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:27:37.242 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:27:37.243 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:27:50.250 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:27:50.251 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:28:03.260 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:28:03.261 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:28:16.270 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:28:16.272 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:28:29.280 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:28:29.281 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:28:42.282 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:28:42.284 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:28:55.290 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:28:55.291 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:29:08.292 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:29:08.300 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:29:21.302 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:29:21.303 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:29:34.310 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:29:34.312 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:29:47.312 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:29:47.314 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:30:00.312 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:30:00.314 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:30:13.312 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:30:13.314 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:30:26.312 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:30:26.313 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:30:39.311 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:30:39.313 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:30:52.312 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:30:52.314 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:31:05.320 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:31:05.322 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:31:18.330 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:31:18.332 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:31:31.335 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:31:31.337 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:31:44.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:31:44.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:31:57.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:31:57.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:32:10.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:32:10.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:32:23.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:32:23.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:32:36.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:32:36.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:32:49.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:32:49.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:33:02.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:33:02.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:33:15.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:33:15.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:33:28.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:33:28.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:33:41.331 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:33:41.332 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:33:54.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:33:54.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:34:07.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:34:07.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:34:20.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:34:20.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:34:33.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:34:33.334 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:34:46.331 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:34:46.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:34:59.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:34:59.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:35:12.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:35:12.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:35:25.332 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:35:25.333 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:35:38.345 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:35:38.347 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:35:51.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:35:51.354 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:36:04.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:36:04.354 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:36:17.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:36:17.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:36:30.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:36:30.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:36:43.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:36:43.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:36:56.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:36:56.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:37:09.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:37:09.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:37:22.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:37:22.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:37:35.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:37:35.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:37:48.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:37:48.354 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:38:01.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:38:01.354 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:38:14.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:38:14.353 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:38:27.352 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:38:27.360 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:38:40.362 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:38:40.364 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:38:53.372 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:38:53.373 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:39:06.372 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:39:06.373 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:39:19.372 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:39:19.373 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:39:32.372 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:39:32.373 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:39:45.381 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:39:45.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:39:58.382 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:39:58.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:40:11.382 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:40:11.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:40:24.382 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:40:24.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:40:37.382 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:40:37.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:40:50.382 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:40:50.383 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:41:03.392 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:41:03.393 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:41:16.400 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:41:16.402 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:41:29.410 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:41:29.411 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:41:42.412 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:41:42.420 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:41:55.421 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:41:55.423 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:42:08.422 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:42:08.423 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:42:21.432 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:42:21.434 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:42:34.439 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:42:34.441 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:42:47.442 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:42:47.443 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:43:00.444 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:43:00.449 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:43:13.462 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:43:13.464 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:43:26.462 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:43:26.464 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:43:39.462 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:43:39.464 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:43:52.462 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:43:52.463 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:44:05.462 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:44:05.467 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:44:18.478 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:44:18.479 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:44:31.482 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:44:31.487 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:44:44.500 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:44:44.501 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:44:57.502 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:44:57.510 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:45:10.512 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:45:10.514 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:45:23.512 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:45:23.514 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:45:36.520 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:45:36.521 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:45:49.521 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:45:49.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:46:02.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:46:02.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:46:15.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:46:15.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:46:28.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:46:28.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:46:41.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:46:41.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:46:54.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:46:54.524 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:47:07.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:47:07.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:47:20.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:47:20.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:47:33.522 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:47:33.523 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:47:46.532 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:47:46.533 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:47:59.532 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:47:59.541 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:48:12.542 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:48:12.543 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:48:25.542 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:48:25.544 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:48:38.542 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:48:38.543 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:48:51.541 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:48:51.543 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:49:04.542 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:49:04.543 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:49:17.552 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:49:17.554 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:49:30.552 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:49:30.553 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:49:43.559 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:49:43.561 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:49:56.562 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:49:56.563 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:50:09.562 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:50:09.564 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:50:22.572 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:50:22.573 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:50:35.572 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:50:35.573 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:50:48.578 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:50:48.579 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:51:01.590 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:51:01.591 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:51:14.600 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:51:14.602 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:51:27.610 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:51:27.611 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:51:40.618 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:51:40.619 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:51:53.620 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:51:53.622 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:52:06.630 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:52:06.631 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:52:19.640 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:52:19.641 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:52:32.642 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:52:32.644 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:52:45.642 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:52:45.646 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:52:58.642 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:52:58.643 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:53:11.642 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:53:11.643 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:53:24.642 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:53:24.643 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:53:37.652 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:53:37.653 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:53:50.651 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:53:50.652 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:54:03.652 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:54:03.660 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:54:16.662 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:54:16.663 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:54:29.662 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:54:29.663 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:54:42.662 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:54:42.663 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:54:55.661 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:54:55.669 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:55:08.679 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:55:08.681 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:55:21.689 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:55:21.691 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:55:34.699 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:55:34.701 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:55:47.709 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:55:47.711 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:56:00.712 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:56:00.713 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:56:13.719 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:56:13.721 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:56:26.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:56:26.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:56:39.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:56:39.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:56:52.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:56:52.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:57:05.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:57:05.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:57:18.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:57:18.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:57:31.722 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:57:31.723 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:57:44.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:57:44.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:57:57.731 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:57:57.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:58:10.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:58:10.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:58:23.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:58:23.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:58:36.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:58:36.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:58:49.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:58:49.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:59:02.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:59:02.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:59:15.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:59:15.734 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:59:28.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:59:28.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:59:41.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:59:41.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-28 23:59:54.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-28 23:59:54.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:00:07.732 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:00:07.733 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:00:20.742 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:00:20.744 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:00:33.750 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:00:33.751 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:00:46.760 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:00:46.761 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:00:59.768 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:00:59.769 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:01:12.775 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:01:12.776 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:01:25.772 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:01:25.773 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:01:38.772 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:01:38.774 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:01:51.772 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:01:51.773 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:02:04.780 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:02:04.782 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:02:17.790 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:02:17.791 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:02:30.800 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:02:30.801 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:02:43.808 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:02:43.810 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:02:56.818 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:02:56.819 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:03:09.820 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:03:09.822 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:03:22.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:03:22.824 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:03:35.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:03:35.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:03:48.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:03:48.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:04:01.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:04:01.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:04:14.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:04:14.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:04:27.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:04:27.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:04:40.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:04:40.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:04:53.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:04:53.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:05:06.821 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:05:06.822 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:05:19.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:05:19.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:05:32.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:05:32.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:05:45.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:05:45.823 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:05:58.822 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:05:58.824 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:06:11.832 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:06:11.833 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:06:24.832 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:06:24.833 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:06:37.832 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:06:37.833 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:06:50.832 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:06:50.833 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:07:03.831 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:07:03.841 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:07:16.850 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:07:16.851 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:07:29.860 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:07:29.861 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:07:42.869 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:07:42.875 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:07:55.880 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:07:55.882 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:08:08.885 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:08:08.888 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:08:21.900 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:08:21.901 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:08:34.910 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:08:34.912 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:08:47.920 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:08:47.921 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:09:00.930 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:09:00.931 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:09:13.940 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:09:13.941 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:09:26.950 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:09:26.951 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:09:39.960 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:09:39.961 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:09:52.966 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:09:52.967 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:10:05.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:10:05.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:10:18.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:10:18.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:10:31.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:10:31.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:10:44.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:10:44.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:10:57.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:10:57.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:11:10.971 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:11:10.972 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:11:23.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:11:23.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:11:36.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:11:36.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:11:49.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:11:49.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:12:02.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:12:02.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:12:15.971 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:12:15.972 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:12:28.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:12:28.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:12:41.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:12:41.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:12:54.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:12:54.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:13:07.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:13:07.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:13:20.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:13:20.974 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:13:33.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:13:33.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:13:46.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:13:46.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:13:59.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:13:59.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:14:12.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:14:12.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:14:25.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:14:25.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:14:38.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:14:38.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:14:51.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:14:51.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:15:04.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:15:04.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:15:17.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:15:17.973 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:15:30.971 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:15:30.972 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:15:43.972 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:15:43.980 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:15:56.982 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:15:56.984 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:16:09.982 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:16:09.984 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:16:22.989 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:16:22.991 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:16:35.999 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:16:36.001 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:16:49.009 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:16:49.011 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:17:02.012 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:17:02.013 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:17:15.018 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:17:15.019 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:17:28.030 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:17:28.032 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:17:41.035 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:17:41.037 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:17:54.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:17:54.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:18:07.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:18:07.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:18:20.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:18:20.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:18:33.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:18:33.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:18:46.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:18:46.044 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:18:59.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:18:59.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:19:12.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:19:12.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:19:25.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:19:25.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:19:38.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:19:38.043 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:19:51.042 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:19:51.048 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:20:04.052 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:20:04.054 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:20:17.052 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:20:17.053 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:20:30.052 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:20:30.053 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:20:43.052 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:20:43.058 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:20:56.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:20:56.063 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:21:09.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:21:09.063 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:21:22.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:21:22.063 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:21:35.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:21:35.064 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:21:48.062 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:21:48.064 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:22:01.070 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:22:01.072 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:22:14.079 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:22:14.080 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:22:27.082 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:22:27.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:22:40.082 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:22:40.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:22:53.082 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:22:53.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:23:06.082 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:23:06.083 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:23:19.091 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:23:19.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:23:32.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:23:32.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:23:45.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:23:45.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:23:58.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:23:58.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:24:11.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:24:11.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:24:24.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:24:24.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:24:37.092 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:24:37.093 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:24:50.099 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:24:50.101 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:25:03.102 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:25:03.103 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:25:16.110 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:25:16.111 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:25:29.112 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:25:29.113 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:25:42.112 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:25:42.113 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:25:55.112 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:25:55.113 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:26:08.112 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:26:08.113 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:26:21.111 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:26:21.119 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:26:34.130 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:26:34.132 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:26:47.139 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:26:47.141 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 00:26:59.161 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
-2016-03-29 00:26:59.163 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
-2016-03-29 17:28:38.293 [INFO ] [penhab.io.rest.RESTApplication] - Stopped REST API
+2016-05-02 18:30:08.060 [WARN ] [.u.component.AbstractLifeCycle] - FAILED SslSelectChannelConnector@0.0.0.0:8443: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-05-02 18:30:08.118 [WARN ] [.u.component.AbstractLifeCycle] - FAILED org.eclipse.jetty.server.Server@188cc0e: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-05-02 18:30:09.237 [WARN ] [.i.s.JettyServerServiceTracker] - 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[na:na]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[na:na]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[na:na]
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[na:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[na:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) ~[na:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) ~[na:na]
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
+2016-05-02 18:30:10.002 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 18:30:13.907 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 18:30:15.140 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 18:30:20.288 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 18:30:20.362 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 18:49:02.270 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 18:49:05.121 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 18:49:05.520 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 18:49:10.518 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 18:49:14.257 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 18:49:15.055 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 18:49:15.131 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 18:49:15.172 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 18:49:15.189 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 18:49:15.335 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 18:49:15.617 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 18:49:15.825 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 18:49:20.485 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 18:49:20.679 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 18:49:21.640 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 18:49:21.640 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 19:01:39.237 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 19:01:42.065 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 19:01:42.437 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 19:01:47.459 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 19:01:51.152 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 19:01:51.628 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 19:01:51.703 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 19:01:51.725 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 19:01:51.741 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 19:01:51.902 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 19:01:52.190 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 19:01:52.942 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 19:01:57.149 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 19:01:57.278 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 19:01:57.374 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 19:01:58.768 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 19:22:42.614 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:22:52.645 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 19:24:02.697 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:33:12.864 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 19:35:12.955 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:35:52.993 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:36:49.807 [WARN ] [.o.u.w.i.render.SwitchRenderer] - Cannot determine item type of 'IoT'
+org.openhab.core.items.ItemNotFoundException: Item 'IoT' could not be found in the item registry
+	at org.openhab.core.internal.items.ItemRegistryImpl.getItem(ItemRegistryImpl.java:80) ~[na:na]
+	at org.openhab.ui.internal.items.ItemUIRegistryImpl.getItem(ItemUIRegistryImpl.java:554) ~[na:na]
+	at org.openhab.ui.webapp.internal.render.SwitchRenderer.renderWidget(SwitchRenderer.java:57) ~[org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.openhab.ui.webapp.internal.render.PageRenderer.renderWidget(PageRenderer.java:158) [org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.openhab.ui.webapp.internal.render.PageRenderer.processChildren(PageRenderer.java:121) [org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.openhab.ui.webapp.internal.render.PageRenderer.processPage(PageRenderer.java:86) [org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.openhab.ui.webapp.internal.servlet.WebAppServlet.service(WebAppServlet.java:127) [org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.300.v20120522-1841.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128) [org.eclipse.equinox.http.servlet_1.1.300.v20120522-1841.jar:na]
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:60) [org.eclipse.equinox.http.servlet_1.1.300.v20120522-1841.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet_3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:598) [org.eclipse.jetty.servlet_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:486) [org.eclipse.jetty.servlet_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413) [org.eclipse.jetty.servlet_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.Server.handle(Server.java:350) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:630) [org.eclipse.jetty.http_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230) [org.eclipse.jetty.http_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:606) [org.eclipse.jetty.io_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:46) [org.eclipse.jetty.io_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_77]
+2016-05-02 19:36:49.811 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
+2016-05-02 19:36:49.813 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
+2016-05-02 19:36:49.814 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
+2016-05-02 19:36:49.814 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
+2016-05-02 19:37:53.052 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:41:48.347 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 19:41:51.215 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 19:41:51.558 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 19:41:56.646 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 19:42:00.287 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 19:42:00.727 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 19:42:00.798 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 19:42:00.833 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 19:42:00.851 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 19:42:01.009 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 19:42:01.292 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 19:42:01.993 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 19:42:06.376 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 19:42:06.471 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 19:42:06.626 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 19:42:07.900 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 19:50:21.837 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 19:50:24.688 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 19:50:25.674 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 19:50:30.197 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 19:50:33.746 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 19:50:34.522 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 19:50:34.599 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 19:50:34.630 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 19:50:34.647 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 19:50:34.803 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 19:50:35.087 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 19:50:36.260 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 19:50:39.990 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 19:50:40.071 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 19:50:40.218 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 19:50:41.420 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 19:55:25.255 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:56:13.473 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '2' for item 'iot_insteon_switch'
+2016-05-02 19:56:13.672 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '2' for item 'iot_insteon_switch'
+2016-05-02 19:56:13.817 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '68' for item 'iot_insteon_switch'
+2016-05-02 19:56:15.817 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '87' for item 'iot_insteon_switch'
+2016-05-02 19:56:15.928 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '87' for item 'iot_insteon_switch'
+2016-05-02 19:56:16.365 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '92' for item 'iot_insteon_switch'
+2016-05-02 19:56:16.560 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '93' for item 'iot_insteon_switch'
+2016-05-02 19:56:16.763 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '100' for item 'iot_insteon_switch'
+2016-05-02 19:56:16.908 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '100' for item 'iot_insteon_switch'
+2016-05-02 19:56:19.056 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '0' for item 'iot_insteon_switch'
+2016-05-02 19:56:19.295 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '0' for item 'iot_insteon_switch'
+2016-05-02 19:56:22.207 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '6' for item 'iot_insteon_switch'
+2016-05-02 19:56:22.414 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '7' for item 'iot_insteon_switch'
+2016-05-02 19:56:22.610 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '9' for item 'iot_insteon_switch'
+2016-05-02 19:56:22.814 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
+2016-05-02 19:56:23.010 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
+2016-05-02 19:56:23.166 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
+2016-05-02 19:57:25.320 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 19:59:10.235 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 19:59:13.156 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 19:59:13.318 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 19:59:18.627 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 19:59:22.150 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 19:59:22.656 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 19:59:22.727 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 19:59:22.751 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 19:59:22.766 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 19:59:22.925 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 19:59:23.211 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 19:59:24.385 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 19:59:28.405 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 19:59:28.598 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 19:59:29.479 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 19:59:29.480 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 20:09:23.465 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 20:12:43.557 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 20:20:10.745 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 20:20:13.544 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 20:20:13.933 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 20:20:18.983 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 20:20:22.647 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 20:20:23.446 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 20:20:23.522 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 20:20:23.542 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 20:20:23.557 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 20:20:23.717 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 20:20:23.998 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 20:20:24.396 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 20:20:28.770 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 20:20:28.956 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 20:20:30.220 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 20:20:30.220 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 20:59:14.650 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 21:11:14.866 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 21:11:44.913 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 21:28:35.207 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-02 21:29:15.267 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-02 23:05:25.226 [WARN ] [.p.m.i.MysqlPersistenceService] - The SQL database URL is missing - please configure the sql:url parameter in openhab.cfg
+2016-05-02 23:05:56.691 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-02 23:06:36.711 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
