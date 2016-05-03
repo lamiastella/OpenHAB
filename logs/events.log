@@ -178,3 +178,32 @@
 2016-05-02 21:29:21 - iot_insteon_dimmer_fastonoff received command OFF
 2016-05-02 21:29:23 - iot_insteon_dimmer_fastonoff received command ON
 2016-05-02 21:29:24 - iot_insteon_dimmer_fastonoff received command OFF
+2016-05-02 23:15:22 - iot_hue_color1 state updated to ON
+2016-05-02 23:15:22 - iot_hue_color1 state updated to 81.9230769230769197974950657226145267486572265625,57,100
+2016-05-02 23:15:22 - iot_hue_switch1 state updated to ON
+2016-05-02 23:21:30 - iot_hue_color1 state updated to OFF
+2016-05-02 23:21:30 - iot_hue_switch1 state updated to OFF
+2016-05-02 23:21:40 - iot_hue_color1 state updated to ON
+2016-05-02 23:21:40 - iot_hue_switch1 state updated to ON
+2016-05-02 23:23:36 - iot_hue_color1 state updated to OFF
+2016-05-02 23:23:36 - iot_hue_switch1 state updated to OFF
+2016-05-02 23:23:56 - iot_hue_color1 state updated to ON
+2016-05-02 23:23:57 - iot_hue_switch1 state updated to ON
+2016-05-02 23:26:19 - iot_hue_switch1 received command OFF
+2016-05-02 23:26:20 - iot_hue_switch1 received command ON
+2016-05-02 23:26:21 - iot_hue_switch1 received command OFF
+2016-05-02 23:26:22 - iot_hue_switch1 received command ON
+2016-05-02 23:26:28 - iot_hue_switch1 received command OFF
+2016-05-02 23:26:28 - iot_hue_switch1 received command ON
+2016-05-02 23:26:30 - iot_insteon_dimmer_fastonoff received command OFF
+2016-05-02 23:26:31 - iot_insteon_dimmer_fastonoff received command ON
+2016-05-02 23:26:32 - iot_insteon_dimmer_fastonoff received command OFF
+2016-05-02 23:26:33 - iot_insteon_switch received command ON
+2016-05-02 23:48:19 - iot_hue_switch1 received command OFF
+2016-05-02 23:48:19 - iot_hue_color1 state updated to OFF
+2016-05-02 23:48:19 - iot_hue_switch1 state updated to OFF
+2016-05-02 23:48:20 - iot_hue_switch1 received command ON
+2016-05-02 23:48:21 - iot_hue_switch1 received command OFF
+2016-05-02 23:48:22 - iot_hue_switch1 received command ON
+2016-05-02 23:48:30 - iot_hue_color1 state updated to ON
+2016-05-02 23:48:30 - iot_hue_switch1 state updated to ON

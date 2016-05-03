@@ -304,3 +304,21 @@ org.openhab.core.items.ItemNotFoundException: Item 'IoT' could not be found in t
 2016-05-02 23:05:25.226 [WARN ] [.p.m.i.MysqlPersistenceService] - The SQL database URL is missing - please configure the sql:url parameter in openhab.cfg
 2016-05-02 23:05:56.691 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
 2016-05-02 23:06:36.711 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-02 23:15:00.411 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-02 23:15:03.510 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-02 23:15:03.633 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-02 23:15:08.719 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-02 23:15:12.325 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-02 23:15:12.823 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-02 23:15:12.878 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-02 23:15:12.921 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-02 23:15:12.935 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-02 23:15:12.951 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-02 23:15:13.118 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-02 23:15:13.407 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-02 23:15:14.190 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-02 23:15:18.793 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-02 23:15:18.845 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-02 23:15:20.045 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-02 23:15:21.146 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-02 23:45:47.662 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
