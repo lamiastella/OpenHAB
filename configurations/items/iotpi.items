@@ -3,3 +3,5 @@ Color iot_hue_color1     "IoT Lab Light Bulb"   (Colorize)  {hue="1; colorTemper
 Dimmer iot_insteon_dimmer_fastonoff "IoT Smart Home Light Dimmer FastOnOff" {insteonplm="27.28.88:F00.00.19#fastonoff"}
 Dimmer iot_insteon_dimmer "IoT Smart Home Light Dimmer" {insteonplm="27.28.88:F00:00.19#dimmer"}
 Switch iot_insteon_switch "IoT Smart Home Light Switch" {insteonplm="27.28.88:F00.00.19#switch"}
+Switch Insight          "Insight"   {wemo="Insight-1_0-221437K1200224"}
+Switch rPi_LED {gpio="pin:4"}

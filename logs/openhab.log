@@ -1,182 +1,1221 @@
-2016-05-02 18:30:08.060 [WARN ] [.u.component.AbstractLifeCycle] - FAILED SslSelectChannelConnector@0.0.0.0:8443: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.Server.doStart(Server.java:273) [org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-2016-05-02 18:30:08.118 [WARN ] [.u.component.AbstractLifeCycle] - FAILED org.eclipse.jetty.server.Server@188cc0e: java.net.BindException: Address already in use
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[org.eclipse.jetty.server_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-2016-05-02 18:30:09.237 [WARN ] [.i.s.JettyServerServiceTracker] - 
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_77]
-	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_77]
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_77]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182) ~[na:na]
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311) ~[na:na]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260) ~[na:na]
-	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626) ~[na:na]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
-	at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[na:na]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59) ~[na:na]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.ServerInstanceWrapper.start(ServerInstanceWrapper.java:166) ~[na:na]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.JettyServerServiceTracker.serviceChanged(JettyServerServiceTracker.java:112) ~[na:na]
-	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.jetty.osgi.boot.internal.serverfactory.DefaultJettyAtJettyHomeHelper.startJettyAtJettyHome(DefaultJettyAtJettyHomeHelper.java:156) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.jetty.osgi.boot.JettyBootstrapActivator.start(JettyBootstrapActivator.java:119) [org.eclipse.jetty.osgi.boot_8.1.3.v20120522.jar:8.1.3.v20120522]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at java.security.AccessController.doPrivileged(Native Method) [na:1.8.0_77]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi_3.8.2.v20130124-134944.jar:na]
-2016-05-02 18:30:10.002 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 18:30:13.907 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 18:30:15.140 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 18:30:20.288 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 18:30:20.362 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 18:49:02.270 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 18:49:05.121 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 18:49:05.520 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 18:49:10.518 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 18:49:14.257 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 18:49:15.055 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 18:49:15.131 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 18:49:15.172 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 18:49:15.189 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 18:49:15.335 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 18:49:15.617 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 18:49:15.825 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 18:49:20.485 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 18:49:20.679 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 18:49:21.640 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 18:49:21.640 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 19:01:39.237 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 19:01:42.065 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 19:01:42.437 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 19:01:47.459 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 19:01:51.152 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 19:01:51.628 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 19:01:51.703 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 19:01:51.725 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 19:01:51.741 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 19:01:51.902 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 19:01:52.190 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 19:01:52.942 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 19:01:57.149 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 19:01:57.278 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 19:01:57.374 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 19:01:58.768 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 19:22:42.614 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:22:52.645 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 19:24:02.697 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:33:12.864 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 19:35:12.955 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:35:52.993 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:36:49.807 [WARN ] [.o.u.w.i.render.SwitchRenderer] - Cannot determine item type of 'IoT'
-org.openhab.core.items.ItemNotFoundException: Item 'IoT' could not be found in the item registry
+2016-05-10 20:05:56.700 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-10 20:05:56.715 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-10 20:05:56.746 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-10 20:05:56.757 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-10 20:05:56.758 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-10 20:05:56.758 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_switch1' in database with statement 'INSERT INTO Item2 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-10 20:19:38.273 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-10 20:19:41.898 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-10 20:19:42.324 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-10 20:19:50.688 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-10 20:19:50.732 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-10 20:19:51.329 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-10 20:19:51.391 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-10 20:19:51.441 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-10 20:19:51.474 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-10 20:19:51.500 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-10 20:19:51.697 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-10 20:19:53.105 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-10 20:19:56.012 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-10 20:20:02.928 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
+2016-05-10 20:20:14.028 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-10 20:20:14.100 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-10 20:20:14.863 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-10 20:20:16.602 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-10 20:27:51.122 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:27:53.347 [INFO ] [.service.AbstractActiveService] - Wemo Refresh Service has been started
+2016-05-10 20:27:53.373 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:28:56.065 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:29:58.306 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:31:00.868 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:32:03.948 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:33:07.129 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:34:08.160 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:35:10.627 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:35:10.630 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:35:15.334 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:35:17.895 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:35:21.070 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-10 20:36:03.396 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-11 05:56:00.131 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 05:56:00.139 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 05:59:07.072 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 05:59:07.073 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 06:03:22.949 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 06:03:22.950 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 06:07:08.735 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 06:07:08.736 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 09:25:37.465 [ERROR] [g.openhab.io.net.http.HttpUtil] - Fatal transport error: java.net.SocketTimeoutException: Read timed out
+2016-05-11 12:11:45.484 [ERROR] [g.openhab.io.net.http.HttpUtil] - Fatal transport error: java.net.SocketTimeoutException: Read timed out
+2016-05-11 13:56:52.856 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 13:56:52.857 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 21:23:55.495 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 21:23:55.497 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 21:41:38.197 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 21:41:38.198 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-11 21:42:33.552 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-11 21:42:33.553 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:36:29.991 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:36:29.993 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:37:55.238 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:37:55.239 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:43:21.286 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:43:21.288 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:45:06.622 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:45:06.623 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:46:11.797 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:46:11.798 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 05:53:59.643 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 05:53:59.644 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:25:04.585 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:25:04.586 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:26:51.608 [ERROR] [g.openhab.io.net.http.HttpUtil] - Fatal transport error: java.net.SocketTimeoutException: Read timed out
+2016-05-12 13:28:21.238 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:28:21.239 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:32:47.158 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:32:47.159 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:44:54.957 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:44:54.959 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:50:41.104 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:50:41.105 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 13:58:07.671 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 13:58:07.672 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 14:01:54.875 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 14:01:54.875 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 14:56:23.257 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 14:56:23.260 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 19:16:34.553 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.555 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.563 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 19:16:34.570 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.571 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.572 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 19:16:34.707 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.708 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:34.710 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 19:16:39.529 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:39.530 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 19:16:39.531 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 19:27:52.321 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 19:27:52.323 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 21:08:08.937 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:09.002 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:09.002 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:09.005 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:09.084 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:08:19.089 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:19.103 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:19.105 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:19.106 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:19.111 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:08:29.114 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:29.140 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:29.140 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:29.141 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:29.150 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:08:39.153 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:39.164 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:39.165 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:39.166 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:39.170 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:08:49.175 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:49.189 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:49.190 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:49.191 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:49.194 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:08:59.197 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:08:59.211 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:59.212 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:08:59.215 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:08:59.220 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:09.224 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:09.236 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:09.236 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:09.237 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:09.243 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:19.246 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:19.261 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:19.262 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:19.268 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:19.271 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:29.274 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:29.286 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:29.290 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:29.292 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:29.297 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:39.300 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:39.315 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:39.315 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:39.316 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:39.320 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:49.323 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:49.348 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:49.349 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:49.350 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:49.354 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:09:59.357 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:09:59.368 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:59.368 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:09:59.369 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:09:59.373 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:09.376 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:09.396 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:09.397 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:09.399 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:09.403 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:19.406 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:19.425 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:19.426 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:19.427 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:19.431 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:29.434 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:29.447 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:29.447 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:29.448 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:29.451 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:39.454 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:39.464 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:39.465 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:39.468 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:39.481 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:49.485 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:49.504 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:49.505 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:49.506 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:49.510 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:10:59.513 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:10:59.524 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:59.525 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:10:59.526 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:10:59.530 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:09.533 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:09.541 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:09.542 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:09.544 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:09.553 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:19.556 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:19.566 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:19.567 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:19.568 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:19.571 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:29.576 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:29.601 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:29.602 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:29.603 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:29.611 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:39.614 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:39.624 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:39.625 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:39.626 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:39.636 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:49.639 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:49.652 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:49.652 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:49.654 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:49.659 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:11:59.662 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:11:59.673 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:59.674 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:11:59.675 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:11:59.678 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:09.681 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:09.694 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:09.694 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:09.695 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:09.698 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:19.701 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:19.717 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:19.718 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:19.720 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:19.725 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:29.729 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:29.741 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:29.742 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:29.743 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:29.746 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:39.749 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:39.761 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:39.762 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:39.763 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:39.767 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:49.770 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:49.781 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:49.791 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:49.792 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:49.794 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:12:55.295 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:55.296 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:55.309 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'Insight' in database with statement 'INSERT INTO Item5 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:12:59.797 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:12:59.808 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:59.815 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:12:59.817 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:12:59.821 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:09.833 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:09.843 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:09.844 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:09.845 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:09.850 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:19.853 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:19.864 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:19.865 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:19.866 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:19.869 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:22.692 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:22.693 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:22.694 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:13:22.699 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:22.701 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:22.703 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_switch1' in database with statement 'INSERT INTO Item2 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:13:29.872 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:29.884 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:29.885 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:29.886 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:29.896 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:39.900 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:39.913 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:39.913 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:39.914 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:39.917 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:49.920 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:49.930 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:49.931 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:49.932 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:49.937 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:13:59.941 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:13:59.952 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:59.953 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:13:59.954 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:13:59.957 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:14:09.960 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:14:09.970 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:09.971 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:09.972 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:14:09.975 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:14:19.978 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:14:19.988 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:19.989 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:19.990 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:14:19.993 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:14:29.996 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:14:30.005 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:30.006 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:30.007 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:14:30.012 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:14:40.015 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:14:40.024 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:40.025 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:40.026 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:14:40.030 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:14:50.034 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:14:50.043 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:50.043 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:14:50.044 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:14:50.055 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:00.058 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:00.068 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:00.069 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:00.070 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:00.081 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:10.084 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:10.095 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:10.095 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:10.096 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:10.099 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:20.102 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:20.112 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:20.113 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:20.121 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:20.125 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:30.129 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:30.141 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:30.148 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:30.150 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:30.153 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:40.156 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:40.166 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:40.166 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:40.167 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:40.171 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:15:50.174 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:15:50.184 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:50.184 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:15:50.185 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:15:50.189 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:00.192 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:00.200 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:00.201 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:00.201 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:00.205 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:10.208 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:10.219 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:10.220 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:10.221 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:10.231 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:11.516 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:11.517 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:11.518 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'Insight' in database with statement 'INSERT INTO Item5 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:16:20.234 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:20.244 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:20.245 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:20.248 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:20.253 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:23.419 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.419 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.420 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:16:23.426 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.426 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.427 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:16:23.432 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.432 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:23.433 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_switch1' in database with statement 'INSERT INTO Item2 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 21:16:30.257 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:30.279 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:30.280 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:30.281 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:30.285 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:40.288 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:40.303 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:40.307 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:40.308 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:40.313 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:16:50.317 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:16:50.328 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:50.329 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:16:50.330 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:16:50.334 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:00.337 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:00.356 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:00.357 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:00.359 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:00.364 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:10.370 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:10.381 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:10.389 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:10.391 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:10.396 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:20.423 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:20.434 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:20.439 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:20.440 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:20.446 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:30.449 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:30.458 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:30.459 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:30.460 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:30.464 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:40.467 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:40.477 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:40.478 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:40.479 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:40.483 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:17:50.486 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:17:50.498 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:50.499 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:17:50.500 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:17:50.512 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:00.516 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:00.524 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:00.525 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:00.526 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:00.530 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:10.533 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:10.543 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:10.545 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:10.547 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:10.551 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:20.567 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:20.579 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:20.580 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:20.581 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:20.593 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:30.598 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:30.608 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:30.609 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:30.610 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:30.615 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:40.620 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:40.632 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:40.633 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:40.634 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:40.639 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:18:50.653 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:18:50.663 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:50.664 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:18:50.665 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:18:50.669 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:00.672 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:00.682 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:00.689 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:00.690 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:00.694 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:10.698 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:10.706 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:10.707 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:10.708 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:10.714 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:20.719 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:20.729 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:20.729 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:20.730 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:20.734 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:30.737 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:30.746 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:30.746 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:30.747 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:30.758 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:40.761 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:40.771 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:40.779 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:40.781 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:40.785 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:19:50.791 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:19:50.799 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:50.800 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:19:50.801 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:19:50.808 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:20:00.817 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:20:00.827 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:00.828 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:00.829 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:20:00.838 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:20:10.841 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:20:10.849 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:10.850 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:10.851 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:20:10.854 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:20:20.858 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:20:20.867 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:20.869 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:20.870 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:20:20.881 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:20:30.884 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:20:30.897 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:30.897 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 21:20:30.898 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Error running querying : 
+2016-05-12 21:20:30.903 [ERROR] [.o.m.c.i.folder.FolderObserver] - An unexpected exception has occured
+java.lang.NullPointerException: null
+	at org.openhab.core.persistence.internal.PersistenceManager.initialize(PersistenceManager.java:370) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.startEventHandling(PersistenceManager.java:186) ~[na:na]
+	at org.openhab.core.persistence.internal.PersistenceManager.modelChanged(PersistenceManager.java:167) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.notifyListeners(ModelRepositoryImpl.java:159) ~[na:na]
+	at org.openhab.model.core.internal.ModelRepositoryImpl.addOrRefreshModel(ModelRepositoryImpl.java:100) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.checkFolder(FolderObserver.java:142) ~[na:na]
+	at org.openhab.model.core.internal.folder.FolderObserver.run(FolderObserver.java:99) ~[na:na]
+2016-05-12 21:20:40.906 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 21:25:49.796 [ERROR] [.i.h.s.d.b.DesignerRuleCreator] - Root block has no children.
+2016-05-12 21:26:36.892 [ERROR] [.i.h.s.d.b.DesignerRuleCreator] - Root block has no children.
+2016-05-12 21:39:37.175 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 21:39:37.177 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 21:52:15.773 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 21:52:15.779 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 22:09:24.619 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-12 22:09:24.621 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-12 22:20:41.675 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 22:21:17.185 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.187 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.189 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:21:17.235 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.236 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.237 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:21:17.486 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.487 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.488 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:21:17.793 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.794 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:17.795 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:21:19.553 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:19.554 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:19.555 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:21:27.264 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:27.265 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Connection is not valid!
+2016-05-12 22:21:27.266 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Could not store item 'iot_hue_color1' in database with statement 'INSERT INTO Item1 (TIME, VALUE) VALUES(NOW(),?) ON DUPLICATE KEY UPDATE VALUE=?;': No operations allowed after connection closed.
+2016-05-12 22:22:31.713 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
+2016-05-12 22:50:58.438 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-12 22:51:02.421 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-12 22:51:02.564 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-12 22:51:09.125 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-12 22:51:10.781 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-12 22:51:11.375 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-12 22:51:11.458 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-12 22:51:11.496 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-12 22:51:11.529 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-12 22:51:11.557 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-12 22:51:11.813 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-12 22:51:12.143 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-12 22:51:17.859 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-12 22:51:24.308 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
+2016-05-12 22:51:30.057 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Failed connecting to the SQL database using: driverClass=com.mysql.jdbc.Driver, url=jdbc:mysql://192.168.1.130:3306/openhab, user=openhab, password=openhab
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_77]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_77]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:357) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2482) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_77]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_77]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_77]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[na:1.8.0_77]
+	at org.openhab.persistence.mysql.internal.MysqlPersistenceService.connectToDatabase(MysqlPersistenceService.java:477) [bundlefile:na]
+	at org.openhab.persistence.mysql.internal.MysqlPersistenceService.activate(MysqlPersistenceService.java:179) [bundlefile:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_77]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_77]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:235) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run(Executor.java:70) [org.eclipse.equinox.util_1.0.400.v20120917-192807.jar:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_77]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_77]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_77]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_77]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_77]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_77]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	... 31 common frames omitted
+2016-05-12 22:51:30.331 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-12 22:51:30.569 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-12 22:51:31.763 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-12 22:51:31.920 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-12 22:51:31.920 [INFO ] [.service.AbstractActiveService] - Wemo Refresh Service has been started
+2016-05-12 22:51:31.923 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-12 23:00:34.384 [ERROR] [g.openhab.io.net.http.HttpUtil] - Fatal transport error: java.net.SocketTimeoutException: Read timed out
+2016-05-13 00:12:37.688 [ERROR] [g.openhab.io.net.http.HttpUtil] - Fatal transport error: java.net.SocketTimeoutException: Read timed out
+2016-05-13 02:14:15.980 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-13 02:14:15.986 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-13 03:06:14.395 [WARN ] [.h.internal.hardware.HueBridge] - Failed to connect to Hue bridge: HTTP request timed out.
+2016-05-13 03:06:14.397 [WARN ] [inding.hue.internal.HueBinding] - Hue settings were null, maybe misconfigured bridge IP.
+2016-05-13 03:07:05.045 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.rules'
+2016-05-13 03:08:05.433 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:08:25.534 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:10:25.579 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 03:10:42.448 [WARN ] [.o.u.w.i.render.SwitchRenderer] - Cannot determine item type of 'iot_hue_switch1'
+org.openhab.core.items.ItemNotFoundException: Item 'iot_hue_switch1' could not be found in the item registry
 	at org.openhab.core.internal.items.ItemRegistryImpl.getItem(ItemRegistryImpl.java:80) ~[na:na]
 	at org.openhab.ui.internal.items.ItemUIRegistryImpl.getItem(ItemUIRegistryImpl.java:554) ~[na:na]
 	at org.openhab.ui.webapp.internal.render.SwitchRenderer.renderWidget(SwitchRenderer.java:57) ~[org.openhab.ui.webapp_1.8.1.jar:na]
 	at org.openhab.ui.webapp.internal.render.PageRenderer.renderWidget(PageRenderer.java:158) [org.openhab.ui.webapp_1.8.1.jar:na]
 	at org.openhab.ui.webapp.internal.render.PageRenderer.processChildren(PageRenderer.java:121) [org.openhab.ui.webapp_1.8.1.jar:na]
+	at org.openhab.ui.webapp.internal.render.PageRenderer.processChildren(PageRenderer.java:138) [org.openhab.ui.webapp_1.8.1.jar:na]
 	at org.openhab.ui.webapp.internal.render.PageRenderer.processPage(PageRenderer.java:86) [org.openhab.ui.webapp_1.8.1.jar:na]
 	at org.openhab.ui.webapp.internal.servlet.WebAppServlet.service(WebAppServlet.java:127) [org.openhab.ui.webapp_1.8.1.jar:na]
 	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61) [org.eclipse.equinox.http.servlet_1.1.300.v20120522-1841.jar:na]
@@ -206,119 +1245,121 @@ org.openhab.core.items.ItemNotFoundException: Item 'IoT' could not be found in t
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:603) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:538) [org.eclipse.jetty.util_8.1.3.v20120522.jar:8.1.3.v20120522]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_77]
-2016-05-02 19:36:49.811 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
-2016-05-02 19:36:49.813 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
-2016-05-02 19:36:49.814 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
-2016-05-02 19:36:49.814 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item IoT for widget org.openhab.model.sitemap.Switch
-2016-05-02 19:37:53.052 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:41:48.347 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 19:41:51.215 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 19:41:51.558 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 19:41:56.646 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 19:42:00.287 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 19:42:00.727 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 19:42:00.798 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 19:42:00.833 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 19:42:00.851 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 19:42:01.009 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 19:42:01.292 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 19:42:01.993 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 19:42:06.376 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 19:42:06.471 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 19:42:06.626 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 19:42:07.900 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 19:50:21.837 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 19:50:24.688 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 19:50:25.674 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 19:50:30.197 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 19:50:33.746 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 19:50:34.522 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 19:50:34.599 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 19:50:34.630 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 19:50:34.647 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 19:50:34.803 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 19:50:35.087 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 19:50:36.260 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 19:50:39.990 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 19:50:40.071 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 19:50:40.218 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 19:50:41.420 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 19:55:25.255 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:56:13.473 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '2' for item 'iot_insteon_switch'
-2016-05-02 19:56:13.672 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '2' for item 'iot_insteon_switch'
-2016-05-02 19:56:13.817 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '68' for item 'iot_insteon_switch'
-2016-05-02 19:56:15.817 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '87' for item 'iot_insteon_switch'
-2016-05-02 19:56:15.928 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '87' for item 'iot_insteon_switch'
-2016-05-02 19:56:16.365 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '92' for item 'iot_insteon_switch'
-2016-05-02 19:56:16.560 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '93' for item 'iot_insteon_switch'
-2016-05-02 19:56:16.763 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '100' for item 'iot_insteon_switch'
-2016-05-02 19:56:16.908 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '100' for item 'iot_insteon_switch'
-2016-05-02 19:56:19.056 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '0' for item 'iot_insteon_switch'
-2016-05-02 19:56:19.295 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '0' for item 'iot_insteon_switch'
-2016-05-02 19:56:22.207 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '6' for item 'iot_insteon_switch'
-2016-05-02 19:56:22.414 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '7' for item 'iot_insteon_switch'
-2016-05-02 19:56:22.610 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '9' for item 'iot_insteon_switch'
-2016-05-02 19:56:22.814 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
-2016-05-02 19:56:23.010 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
-2016-05-02 19:56:23.166 [WARN ] [.w.internal.servlet.CmdServlet] - Received unknown command '13' for item 'iot_insteon_switch'
-2016-05-02 19:57:25.320 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 19:59:10.235 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 19:59:13.156 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 19:59:13.318 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 19:59:18.627 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 19:59:22.150 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 19:59:22.656 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 19:59:22.727 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 19:59:22.751 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 19:59:22.766 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 19:59:22.925 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 19:59:23.211 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 19:59:24.385 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 19:59:28.405 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 19:59:28.598 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 19:59:29.479 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 19:59:29.480 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 20:09:23.465 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 20:12:43.557 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 20:20:10.745 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 20:20:13.544 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 20:20:13.933 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 20:20:18.983 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 20:20:22.647 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 20:20:23.446 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 20:20:23.522 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 20:20:23.542 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 20:20:23.557 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 20:20:23.717 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 20:20:23.998 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 20:20:24.396 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 20:20:28.770 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 20:20:28.956 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 20:20:30.220 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 20:20:30.220 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 20:59:14.650 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 21:11:14.866 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 21:11:44.913 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 21:28:35.207 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
-2016-05-02 21:29:15.267 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
-2016-05-02 23:05:25.226 [WARN ] [.p.m.i.MysqlPersistenceService] - The SQL database URL is missing - please configure the sql:url parameter in openhab.cfg
-2016-05-02 23:05:56.691 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
-2016-05-02 23:06:36.711 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'mysql.persist'
-2016-05-02 23:15:00.411 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
-2016-05-02 23:15:03.510 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
-2016-05-02 23:15:03.633 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
-2016-05-02 23:15:08.719 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
-2016-05-02 23:15:12.325 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
-2016-05-02 23:15:12.823 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
-2016-05-02 23:15:12.878 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
-2016-05-02 23:15:12.921 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
-2016-05-02 23:15:12.935 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
-2016-05-02 23:15:12.951 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
-2016-05-02 23:15:13.118 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
-2016-05-02 23:15:13.407 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
-2016-05-02 23:15:14.190 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
-2016-05-02 23:15:18.793 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
-2016-05-02 23:15:18.845 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
-2016-05-02 23:15:20.045 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
-2016-05-02 23:15:21.146 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
-2016-05-02 23:45:47.662 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
+2016-05-13 03:10:42.453 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_switch1 for widget org.openhab.model.sitemap.Switch
+2016-05-13 03:10:42.454 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_switch1 for widget org.openhab.model.sitemap.Switch
+2016-05-13 03:10:42.455 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_switch1 for widget org.openhab.model.sitemap.Switch
+2016-05-13 03:10:42.456 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_switch1 for widget org.openhab.model.sitemap.Switch
+2016-05-13 03:10:42.457 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve visibility item iot_hue_switch1 for widget org.openhab.model.sitemap.Colorpicker
+2016-05-13 03:10:42.457 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_color1 for widget org.openhab.model.sitemap.Colorpicker
+2016-05-13 03:10:42.458 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_color1 for widget org.openhab.model.sitemap.Colorpicker
+2016-05-13 03:10:42.460 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_color1 for widget org.openhab.model.sitemap.Colorpicker
+2016-05-13 03:10:42.460 [ERROR] [o.u.i.items.ItemUIRegistryImpl] - Cannot retrieve item iot_hue_color1 for widget org.openhab.model.sitemap.Colorpicker
+2016-05-13 03:10:55.630 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-13 03:11:04.524 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch1', but the item does not exist in the registry
+2016-05-13 03:11:05.933 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch1', but the item does not exist in the registry
+2016-05-13 03:11:07.080 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch1', but the item does not exist in the registry
+2016-05-13 03:11:07.951 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch1', but the item does not exist in the registry
+2016-05-13 03:11:09.110 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch1', but the item does not exist in the registry
+2016-05-13 03:11:45.651 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-13 03:12:05.673 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 03:12:34.903 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch2', but the item does not exist in the registry
+2016-05-13 03:12:36.459 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch2', but the item does not exist in the registry
+2016-05-13 03:12:37.562 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch2', but the item does not exist in the registry
+2016-05-13 03:12:38.834 [WARN ] [.w.internal.servlet.CmdServlet] - Received command 'TOGGLE' for item 'iot_hue_switch2', but the item does not exist in the registry
+2016-05-13 03:14:05.736 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 03:14:25.766 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-13 03:15:45.795 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'
+2016-05-13 03:16:15.821 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 03:16:35.847 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 03:19:15.920 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:20:00.706 [WARN ] [m.r.i.engine.RuleContextHelper] - Variable 'colormap' on rule file 'iotpi.rules' cannot be initialized with value 'org.eclipse.xtext.xbase.impl.XConstructorCallImplCustom@1bd355 (invalidFeatureIssueCode: null, validFeature: false)': An error occured during the script execution: null
+2016-05-13 03:20:00.836 [WARN ] [.c.i.events.EventPublisherImpl] - given command is NULL, couldn't send command to 'iot_hue_color1'
+2016-05-13 03:22:36.037 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:23:05.086 [WARN ] [m.r.i.engine.RuleContextHelper] - Variable 'colormap' on rule file 'iotpi.rules' cannot be initialized with value 'org.eclipse.xtext.xbase.impl.XConstructorCallImplCustom@169caed (invalidFeatureIssueCode: null, validFeature: false)': An error occured during the script execution: null
+2016-05-13 03:23:05.295 [ERROR] [o.o.c.s.ScriptExecutionThread ] - Error during the execution of rule 'TurnOnHueIfWeMo': The name 'GREEN' cannot be resolved to an item or type.
+2016-05-13 03:26:56.108 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:27:26.162 [WARN ] [m.r.i.engine.RuleContextHelper] - Variable 'colormap' on rule file 'iotpi.rules' cannot be initialized with value 'org.eclipse.xtext.xbase.impl.XConstructorCallImplCustom@1a33e0b (invalidFeatureIssueCode: null, validFeature: false)': An error occured during the script execution: null
+2016-05-13 03:28:26.141 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:28:46.088 [WARN ] [m.r.i.engine.RuleContextHelper] - Variable 'colormap' on rule file 'iotpi.rules' cannot be initialized with value 'org.eclipse.xtext.xbase.impl.XConstructorCallImplCustom@177f7f5 (invalidFeatureIssueCode: null, validFeature: false)': An error occured during the script execution: null
+2016-05-13 03:30:46.180 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.rules'
+2016-05-13 03:40:17.859 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-13 03:40:21.717 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-13 03:40:21.966 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-13 03:40:29.452 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-13 03:40:30.211 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-13 03:40:30.802 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-13 03:40:30.890 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-13 03:40:30.931 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-13 03:40:30.957 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-13 03:40:30.985 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-13 03:40:31.194 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-13 03:40:31.569 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-13 03:40:35.354 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-13 03:40:41.768 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.rules'
+2016-05-13 03:40:44.509 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
+2016-05-13 03:40:50.022 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-13 03:40:50.185 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-13 03:40:50.421 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-13 03:40:51.132 [ERROR] [.p.m.i.MysqlPersistenceService] - mySQL: Failed connecting to the SQL database using: driverClass=com.mysql.jdbc.Driver, url=jdbc:mysql://192.168.1.130:3306/openhab, user=openhab, password=openhab
+java.sql.SQLException: null,  message from server: "Host '192.168.1.130' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1112) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2519) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2304) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_77]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_77]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346) ~[mysql-connector-java-5.1.26-bin.jar:na]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_77]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[na:1.8.0_77]
+	at org.openhab.persistence.mysql.internal.MysqlPersistenceService.connectToDatabase(MysqlPersistenceService.java:477) [bundlefile:na]
+	at org.openhab.persistence.mysql.internal.MysqlPersistenceService.activate(MysqlPersistenceService.java:179) [bundlefile:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_77]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_77]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:235) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89) [org.eclipse.equinox.ds_1.4.1.v20120926-201320.jar:na]
+	at org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run(Executor.java:70) [org.eclipse.equinox.util_1.0.400.v20120917-192807.jar:na]
+2016-05-13 03:40:51.365 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-13 03:40:52.623 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-13 03:40:54.044 [INFO ] [.service.AbstractActiveService] - Wemo Refresh Service has been started
+2016-05-13 03:45:16.765 [INFO ] [.o.core.internal.CoreActivator] - openHAB runtime has been started (v1.8.1).
+2016-05-13 03:45:20.645 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - mDNS service has been started
+2016-05-13 03:45:20.832 [INFO ] [o.o.i.s.i.DiscoveryServiceImpl] - Service Discovery initialization completed.
+2016-05-13 03:45:27.031 [INFO ] [penhab.io.rest.RESTApplication] - Started REST API at /rest
+2016-05-13 03:45:29.083 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.sitemap'
+2016-05-13 03:45:29.637 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'mysql.persist'
+2016-05-13 03:45:29.710 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'rrd4j.persist'
+2016-05-13 03:45:29.754 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'logging.persist'
+2016-05-13 03:45:29.770 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'db4o.persist'
+2016-05-13 03:45:29.795 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'exec.persist'
+2016-05-13 03:45:29.988 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'demo.script'
+2016-05-13 03:45:30.301 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.items'
+2016-05-13 03:45:32.409 [INFO ] [.o.u.w.i.servlet.WebAppServlet] - Started Classic UI at /classicui/openhab.app
+2016-05-13 03:45:39.680 [INFO ] [.o.io.habmin.HABminApplication] - Started HABmin REST API at /services/habmin
+2016-05-13 03:45:40.491 [INFO ] [c.internal.ModelRepositoryImpl] - Loading model 'iotpi.rules'
+2016-05-13 03:45:45.264 [INFO ] [.o.b.wemo.internal.WemoBinding] - Wemo Device with UDN 'Insight-1_0-221437K1200224' discovered
+2016-05-13 03:45:46.272 [INFO ] [.service.AbstractActiveService] - Wemo Refresh Service has been started
+2016-05-13 03:45:46.373 [INFO ] [.service.AbstractActiveService] - HTTP Refresh Service has been started
+2016-05-13 03:45:48.255 [INFO ] [.service.AbstractActiveService] - Hue Refresh Service has been started
+2016-05-13 03:45:48.256 [INFO ] [.service.AbstractActiveService] - NTP Refresh Service has been started
+2016-05-13 03:45:48.343 [INFO ] [.p.rrd4j.internal.RRD4jService] - Removing invalid defintion component = null heartbeat = 0 min/max = 0.0/0.0 step = 0 0 archives(s) = [] 0 items(s) = []
+2016-05-13 04:19:11.168 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.items'
+2016-05-13 04:19:31.758 [INFO ] [c.internal.ModelRepositoryImpl] - Refreshing model 'iotpi.sitemap'

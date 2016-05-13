@@ -1,8 +1,12 @@
-Strategies {  
-     default = everyChange
-}  
-  
-Items {  
-      * : strategy = default, restoreOnStartup  
-}  
+Strategies {
+	everyMinute : "0 * * * * ?"
+	everyHour : "0 0 * * * ?"
+	everyDay  : "0 0 0 * * ?"
 
+	default = everyChange
+}
+
+Items {
+	gSQL* : strategy = everyChange, everyHour, everyDay, restoreOnStartup
+
+}

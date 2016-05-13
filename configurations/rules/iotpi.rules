@@ -1,0 +1,5 @@
+rule "TurnHueRedIfWeMoOn"
+when 
+	Item Insight changed from OFF to ON
+then 
+	sendCommand(iot_hue_color1,"2.98,71,100") 
